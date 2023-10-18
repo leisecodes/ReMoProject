@@ -2,9 +2,9 @@ import React from "react";
 
 function VoteButton() {
     return (
-        <button id="nav-button">
-            <a href="">Vote</a>
-        </button>
+        <div>
+        <a href="" class="text-decoration-none">Vote</a>
+        </div>
     )
 }
 

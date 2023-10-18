@@ -2,9 +2,9 @@ import React from "react";
 
 function HomeButton() {
     return(
-        <button id='nav-button'>
-            <a href="">Home</a>
-        </button>
+        <div>
+        <a href="" class="text-decoration-none">Home</a>
+        </div>
     );
 };
 
