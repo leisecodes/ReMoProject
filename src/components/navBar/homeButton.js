@@ -1,9 +1,9 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 function HomeButton() {
     return(
         <div>
-        <a href="" class="text-decoration-none">Home</a>
+        <button class="btn btn-outline-primary"><Link to='/' class=''>Home</Link></button>
         </div>
     );
 };

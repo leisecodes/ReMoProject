@@ -1,6 +1,7 @@
 import React from "react";
 import { BsPersonCircle } from 'react-icons/bs';
 
+
 function ProfileIcon() {
     return (
         <div id='profile-icon'>
