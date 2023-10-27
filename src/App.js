@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import HomePage from './pages/homePage/index';
+import HomePage from './pages/homePage';
 import NavBar from './components/navBar';
 import {
   BrowserRouter as Router,
@@ -14,7 +14,7 @@ function App() {
     <Router>
         <NavBar />
         <Routes>
-          <Route path="/" element= {<HomePage/>}/>
+          <Route path="/home" element= {<HomePage/>}/>
           <Route path="/profile" element= {<ProfilePage/>}/>
         </Routes>
     </Router>

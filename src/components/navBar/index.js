@@ -17,9 +17,9 @@ function NavBar(){
                 Maine Student Book Award
             </a>
         <div class="navbar-nav me-auto mb-2 mb-lg-0">
-            <button class="btn btn-outline-primary ms-5 px-4 py-1"><Link to='/' class='text-decoration-none'>Home</Link></button>
-            <button class="btn btn-outline-primary ms-5 px-4 py-1"><Link to='/' class='text-decoration-none'>Books</Link></button>
-            <button class="btn btn-outline-primary ms-5 px-4 py-1"><Link to='/' class='text-decoration-none'>Vote</Link></button>
+            <button class="btn btn-outline-primary ms-5 px-4 py-1"><Link to='/home' class='text-decoration-none'>Home</Link></button>
+            <button class="btn btn-outline-primary ms-5 px-4 py-1"><Link to='/books' class='text-decoration-none'>Books</Link></button>
+            <button class="btn btn-outline-primary ms-5 px-4 py-1"><Link to='/vote' class='text-decoration-none'>Vote</Link></button>
             <button class="btn btn-outline-none ms-5"> <Link to='/profile'><BsPersonCircle size={50}/></Link> </button>
         </div>
         </nav>       

@@ -4,7 +4,7 @@ function Greeting (props) {
     return (
         <div>
         <h1>Welcome, Student!</h1>
-        <h2>You have read X books.</h2>
+        <h2>You have read __ books.</h2>
         </div>
     );
 };
