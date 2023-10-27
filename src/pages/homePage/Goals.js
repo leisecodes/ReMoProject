@@ -1,5 +1,5 @@
 import React from 'react';
-
+import goalImg from "../../images/goal.jpg";
 function Goals (props) {
     return (
         <div>
@@ -18,7 +18,7 @@ function Goals (props) {
                     <div class="row align-items-center p-4">
                         <center>
                             <div class="col">
-                                <img src='' alt='goal'/>
+                                <img src={goalImg} alt='goal' width="100px" height="100px"/>
                             </div>
                         </center>
                     </div>
@@ -31,12 +31,12 @@ function Goals (props) {
             <div class="col-6">
                 <div class="container-md border">
                     <div class="row text-center p-3">
-                        <h2>Voting Goal</h2>
+                        <h2>Personal Goal</h2>
                     </div>
                     <div class="row align-items-center p-4">
                         <center>
                             <div class="col">
-                                <img src='' alt='goal'/>
+                                <img src={goalImg} alt='goal' width="100px" height="100px"/>
                             </div>
                         </center>
                     </div>
@@ -54,7 +54,7 @@ function Goals (props) {
                     <div class="row align-items-center p-4">
                         <center>
                             <div class="col">
-                                <img src='' alt='goal'/>
+                                <img src={goalImg} alt='goal' width="100px" height="100px"/>
                             </div>
                         </center>
                     </div>
@@ -72,7 +72,7 @@ function Goals (props) {
                     <div class="row align-items-center p-4">
                         <center>
                             <div class="col">
-                                <img src='' alt='goal'/>
+                                <img src={goalImg} alt='goal' width="100px" height="100px"/>
                             </div>
                         </center>
                     </div>
