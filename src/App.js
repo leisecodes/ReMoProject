@@ -8,6 +8,7 @@ import {
   Route,
 } from 'react-router-dom';
 import ProfilePage from './pages/profilePage';
+import BookPage from './pages/bookPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/home" element= {<HomePage/>}/>
           <Route path="/profile" element= {<ProfilePage/>}/>
+          <Route path="/books" element= {<BookPage/>}/>
         </Routes>
     </Router>
    
