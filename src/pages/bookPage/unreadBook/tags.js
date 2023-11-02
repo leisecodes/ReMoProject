@@ -9,7 +9,7 @@ function Tags() {
   };
 
   const tagButtonStyle = {
-    border: '1px solid #000',
+    border: 'none',
     borderRadius: '50%',
     width: '60px',
     height: '25px',
@@ -24,17 +24,18 @@ function Tags() {
 
 
   const lgButtonStyle = {
-    border: '1px solid #000',
-    width: '150px', // Adjust the width as needed
+    border: 'none',
+    width: '160px', // Adjust the width as needed
     height: '40px', // Adjust the height as needed
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    margin: '10px 5px', // Adjust the spacing between buttons
+    margin: '10px 20px 10px 55px', // Adjust the spacing between buttons
     cursor: 'pointer',
     color: 'white',
     fontWeigth: 'bold',
     fontSize: '16px',
+    borderRadius: '20px',
   };
 
 

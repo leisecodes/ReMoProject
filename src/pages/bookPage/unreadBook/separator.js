@@ -5,13 +5,13 @@ function Separator () {
     const separatorStyle = {
         borderTop: '4.15px solid #00B2A9',
         width: '90%',
-        margin: '0cm 1cm 0.25cm 1cm', // Adjust the margin for spacing
+        margin: '0cm 1cm 0.25cm 1cm', 
         borderRadius: '1rem',
-        position: 'relative', // Set the position to relative
+        position: 'relative', 
       };
     
       const innerSeparatorStyle = {
-        borderTop: '1px solid #9e4dab', // Add a very thin yellow line
+        borderTop: '1px solid #9e4dab', 
         width: '99.9%',
         borderRadius: '1rem',
         position: 'absolute', // Position it absolutely within the container

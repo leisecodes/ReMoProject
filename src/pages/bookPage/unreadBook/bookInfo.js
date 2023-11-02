@@ -23,6 +23,7 @@ function BookInfo() {
         height: '420px',
         padding: '20px', // Padding within the box
         marginLeft: '15px', // Margin to separate the image and the box
+        borderRadius: '20px', // Adjust the value to control the roundness
     };
 
  
