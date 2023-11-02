@@ -5,7 +5,7 @@ function Tags() {
   const tagsStyle = {
     display: 'flex',
     alignItems: 'center',
-    marginTop: '20px', // Adjust the spacing as needed
+    marginTop: '60px', // Adjust the spacing as needed
   };
 
   const tagButtonStyle = {
