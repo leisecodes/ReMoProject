@@ -1,6 +1,6 @@
 import React from 'react';
 import culturedDonut from "../../../images/culturedDonut.webp";
-import Separator from './separator';
+import Tags from './tags';
 
 
 function BookInfo() {
@@ -20,7 +20,7 @@ function BookInfo() {
     const bookInfoStyle = {
         border: '1px solid #000', 
         width: '575px',
-        height: '320px',
+        height: '420px',
         padding: '20px', // Padding within the box
         marginLeft: '15px', // Margin to separate the image and the box
     };
@@ -41,6 +41,9 @@ function BookInfo() {
                 <p>Genre: </p>
                 <p>Page Count: </p>
                 <p>Summary: </p>
+
+                {/* Tag reference here */}
+                <Tags />
             </div>
     </div>
    

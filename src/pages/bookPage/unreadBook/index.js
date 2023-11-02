@@ -1,7 +1,7 @@
 import React from "react";
+
 import PgHeader from "./pgHeader";
 import BookInfo from "./bookInfo";
-
 import BaseShade from "./baseShade";
 
 

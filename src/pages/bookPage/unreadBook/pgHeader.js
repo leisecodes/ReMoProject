@@ -1,5 +1,5 @@
 import React from 'react';
-import Separatorfrom  from './separator';
+import Separator from './separator';
 
 function PgHeader () {
     
@@ -39,17 +39,20 @@ function PgHeader () {
     
     
     return(
-        <div style={HeaderContainerStyle} >
-            <div className="back-button" style={backButtonStyle}>
-                {/* Blue box with a white back arrow */}
-                <div className="arrow" style={arrowStyle}>&#8592;</div>
+        <div>
+            <Separator />
+            <div style={HeaderContainerStyle} >
+                
+                <div className="back-button" style={backButtonStyle}>
+                    {/* Blue box with a white back arrow */}
+                    <div className="arrow" style={arrowStyle}>&#8592;</div>
+                </div>
+                <div className="book-details" style={bookDetailsStyle}>
+                    <h1 style={minMargin}>Book Details</h1>
+                    <span style={minMargin}>(Unread Book)</span>
+                </div>
             </div>
-            <div className="book-details" style={bookDetailsStyle}>
-                <h1 style={minMargin}>Book Details</h1>
-                <span style={minMargin}>(Unread Book)</span>
-             </div>
         </div>
-
     );
 }
 export default PgHeader;
