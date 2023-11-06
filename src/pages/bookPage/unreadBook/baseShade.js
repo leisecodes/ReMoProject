@@ -1,30 +1,23 @@
 import React from 'react';
+import '../book.css';
 
 function BaseShade () {
 
-    const containerStyle = {
+    const container = {
         position: 'fixed',
         bottom: 0,
         width: '100%',
-      };
-    
-      const greenLineStyle = {
-        height: '25px',
+        height: '30px', // Set the desired height
         backgroundColor: '#00B2A9',
       };
     
-      const yellowLineStyle = {
-        height: '5px', // Adjust the thickness of the yellow line
-        backgroundColor: '#FFFAA0',
-      };
-    
-      return (
-        <div style={containerStyle}>
-          <div style={yellowLineStyle}></div>
-          <div style={greenLineStyle}></div>
-          
+    return (
+        <div style={container}>
+          <div className="yellow-line"></div>
+          <div className="green-line"></div>
         </div>
       );
+    
 
 
 

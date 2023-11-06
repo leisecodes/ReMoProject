@@ -1,0 +1,145 @@
+/* tags.css -> tag, mark as read, and TBR buttons on Books pages*/
+.tags {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+  }
+  
+.tag-button {
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 13.5px;
+  }
+  
+.lg-button {
+    border: none;
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px 10px 55px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+
+.tag-color-1 {
+    background-color: #661c78;
+  }
+  
+.tag-color-2 {
+    background-color: #9e4dab;
+  }
+  
+.tag-color-3 {
+    background-color: #E35205;
+  }
+  
+.tag-color-4 {
+    background-color: #ED8B00;
+  }
+  
+
+
+/* BaseShade.css -> colored lines at bottom of book pages */
+.container {
+    position: fixed;
+    bottom: 0;
+    width: 100% ;
+  }
+  
+.green-line {
+    height: 25px;
+    background-color: #00B2A9;
+  }
+  
+.yellow-line {
+    height: 5px; /* Adjust the thickness of the yellow line */
+    background-color: #FFFAA0;
+  }
+  
+  /* separator.css */
+.separator-style {
+    border-top: 4.15px solid #00B2A9;
+    width: 90%;
+    margin: 0cm 1cm 0.25cm 1cm;
+    border-radius: 1rem;
+    position: relative;
+  }
+  
+.inner-separator-style {
+    border-top: 1px solid #9e4dab;
+    width: 99.9%;
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* pgHeader.css -> holds the back button and label for Book Details*/
+.header-container {
+    display: flex;
+    align-items: center;
+  }
+  
+.back-button {
+    background-color: #FF5733;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    margin-left: 1.3cm;
+  }
+  
+.book-details {
+    margin-left: 0.8cm;
+  }
+  
+.arrow {
+    font-size: 24px;
+  }
+  
+  /* Reduce the margin between Book Details and (Unread Book) */
+.book-details span {
+    margin: 0; /* Adjust as needed */
+    padding: 0;
+  }
+
+  
+  /* bookInfo.css -> allows for the cover image and captures tags and book info*/
+.bookInfoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.coverImage img {
+    width: 420px;
+    height: 370px;
+    margin: 20px 90px;
+}
+
+.bookInfoStyle {
+    border: 1px solid #000;
+    width: 575px;
+    height: 390px;
+    padding: 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+/* You can keep the styles for h2, p, and other elements here as well. */

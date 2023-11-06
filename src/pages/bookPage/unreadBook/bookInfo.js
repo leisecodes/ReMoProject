@@ -1,6 +1,7 @@
 import React from 'react';
 import culturedDonut from "../../../images/culturedDonut.webp";
 import Tags from './tags';
+import '../book.css';
 
 
 function BookInfo() {
@@ -10,30 +11,12 @@ function BookInfo() {
         alignItems: 'center',
     };
 
-    const imageStyle = {
-        width: '400px', 
-        height: '350px', 
-        margin: '30px 30px',
-    };
-    
-    
-    const bookInfoStyle = {
-        border: '1px solid #000', 
-        width: '575px',
-        height: '390px',
-        padding: '20px', // Padding within the box
-        marginLeft: '15px', // Margin to separate the image and the box
-        borderRadius: '20px', // Adjust the value to control the roundness
-    };
-
- 
     return (
         <div className="bookInfoContainer" style={containerStyle}>
-            
             <div className="coverImage">
-                <img src={culturedDonut} alt="Book Cover" style={imageStyle} />
+                <img src={culturedDonut} alt="Book Cover" />
             </div>
-            <div style={bookInfoStyle}>
+            <div className="bookInfoStyle"> {/* Use the class name from bookInfo.css */}
                 {/* Book information here */}
                 <h2 style={{ marginBottom: '4px' }}> Title: </h2>
                 <p style={{ marginBottom: '2px' }}>Author: </p>
@@ -43,11 +26,11 @@ function BookInfo() {
                 <p style={{ marginBottom: '2px' }}>Page Count: </p>
                 <p style={{ marginBottom: '2px' }}>Summary: </p>
 
+
                 {/* Tag reference here */}
                 <Tags />
             </div>
-    </div>
-   
+        </div>
     );
 
 }
