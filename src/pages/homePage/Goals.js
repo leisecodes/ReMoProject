@@ -41,7 +41,7 @@ function Goals (props) {
                         </center>
                     </div>
                     <div class="row text-center p-3">
-                        <h2>Text?</h2>
+                        <h2>X of Y Completed</h2>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@ function Goals (props) {
                         </center>
                     </div>
                     <div class="row text-center p-3">
-                        <h2>Text?</h2>
+                        <h2>X of 10 Completed</h2>
                     </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@ function Goals (props) {
                         </center>
                     </div>
                     <div class="row text-center p-3">
-                        <h2>Text?</h2>
+                        <h2>X of Z Completed</h2>
                     </div>
                 </div>
             </div>
