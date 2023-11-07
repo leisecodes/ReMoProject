@@ -1,4 +1,4 @@
-/* tags.css -> tag, mark as read, and TBR buttons on Books pages*/
+/* tags.css -> tag, mark as read, and TBR buttons on Books page*/
 .tags {
     display: flex;
     align-items: center;
@@ -133,6 +133,12 @@
     margin: 20px 90px;
 }
 
+.coverImageRd img {
+    width: 325px;
+    height: 420px;
+    margin: 20px 90px;
+}
+
 .bookInfoStyle {
     border: 1px solid #000;
     width: 575px;
@@ -142,4 +148,77 @@
     border-radius: 20px;
 }
 
-/* You can keep the styles for h2, p, and other elements here as well. */
+
+
+
+/* reviewButtons.css */
+.button-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.review-button {
+    margin: 0 10px; /* Adjust the spacing between buttons */
+    border: none;
+    width: 150px;
+    height: 30px;
+    font-size: 14.5px;
+    border-radius: 15px; /* Rounded corners */
+}
+
+
+.action-packed-button {
+    background-color: #661c78; /* Set your desired background color */
+    color: white; /* Text color */
+    border: none;
+   
+}
+
+.cool-characters-button {
+    background-color: #9e4dab; /* Set your desired background color */
+    color: white; /* Text color */
+    border: none;
+   
+}
+
+.made-me-laugh-button {
+    background-color: #E35205; /* Set your desired background color */
+    color: white; /* Text color */
+    border: none;
+   
+}
+
+/* Submit & Cancel buttons on Read Books page*/
+.large-button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center;
+    margin-top: 30px; /* Adjust the top margin as needed */
+}
+
+.submit-button,
+.cancel-button {
+    
+    color: white; /* Text color */
+    border: none;
+    width: 150px;
+    height: 40px; /* Adjust the height as needed */
+    font-size: 16px; /* Adjust the font size as needed */
+    margin: 0 10px; /* Adjust the spacing between buttons */
+    border-radius: 5px; /* Add rounded edges */
+    font-weight: bold;
+}
+
+/* Add a CSS class for the favorite button */
+.favorite-button {
+    position: absolute;
+    top: 32px; /* Adjust the vertical position */
+    right: 234px; /* Adjust the horizontal position */
+    background-color: transparent;
+    border: none;
+    font-size: 28px;
+    color: red;
+    cursor: pointer;
+    z-index: 1; /* Place the button above other content */
+}
