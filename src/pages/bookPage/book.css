@@ -1,4 +1,4 @@
-/* tags.css -> tag, mark as read, and TBR buttons on Books page*/
+/* tags.css -> tag, mark as read, and TBR buttons on R & Ur Books pages*/
 .tags {
     display: flex;
     align-items: center;
@@ -116,7 +116,7 @@
   
   /* Reduce the margin between Book Details and (Unread Book) */
 .book-details span {
-    margin: 0; /* Adjust as needed */
+    margin: 0; 
     padding: 0;
   }
 
@@ -151,7 +151,7 @@
 
 
 
-/* reviewButtons.css */
+/* reviewButtons.css on Read books page */
 .button-container {
     display: flex;
     justify-content: left;
@@ -213,12 +213,45 @@
 /* Add a CSS class for the favorite button */
 .favorite-button {
     position: absolute;
-    top: 32px; /* Adjust the vertical position */
+    top: 42px; /* Adjust the vertical position */
     right: 234px; /* Adjust the horizontal position */
-    background-color: transparent;
+    background-color: white;
     border: none;
-    font-size: 28px;
-    color: red;
+    border-radius: 70%;
+    width: 40px;
+    height: 40px;
+    line-height: 1;
+    font-size: 32px;
+    color: white;
     cursor: pointer;
     z-index: 1; /* Place the button above other content */
+    display: flex; /* Center content horizontally and vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+
+/* clicked state of the favorite button */
+.favorite-button-clicked {
+    color: red;
+    background-color: white;
+    border: none;
+    text-shadow: none;
+    font-size: 40px;
+}
+
+/* Read Book star rating */
+.star-rating {
+    font-size: 24px;
+  }
+  
+  .star {
+    display: inline-block;
+    cursor: pointer;
+    color: #ccc;
+  }
+  
+  .star.selected {
+    color: #ffcc00; /* Color for selected stars */
+  }
+  

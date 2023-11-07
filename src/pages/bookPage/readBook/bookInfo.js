@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import StarRating from './starRating';
 import callers from "../../../images/callers.jpg";
 import '../book.css';
 
 
 function BookInfo() {
+    const [isFavorite, setIsFavorite] = useState(false);
+    const [myRating, setMyRating] = useState(0);
 
     const containerStyle = {
         display: 'flex',
@@ -11,9 +14,29 @@ function BookInfo() {
         position: 'relative',
     };
 
+    const handleFavoriteClick = () => {
+        setIsFavorite(!isFavorite);
+    };
+
+    const handleRatingChange = (newRating) => {
+        setMyRating(newRating);
+      };
+
+    const favoriteButtonClass = isFavorite
+        ? 'favorite-button favorite-button-clicked'
+        : 'favorite-button';
+    
+
     return (
         <div className="bookInfoContainer" style={containerStyle}>
-            <button className="favorite-button">&hearts;</button>
+            <button 
+                className={favoriteButtonClass}
+                onClick={handleFavoriteClick}
+                >
+                    &hearts;
+            </button>
+            
+            
             <div className="coverImageRd">
                 <img src={callers} alt="Book Cover" />
             </div>
@@ -21,7 +44,13 @@ function BookInfo() {
                
                 {/* Book information here */}
                 <h2 style={{ marginBottom: '10px' }}> Title: </h2>
-                <h5 style={{ marginBottom: '14px' }}> My Rating: </h5>
+                <h5 style={{ marginBottom: '14px' }}> 
+                    My Rating: 
+                    <StarRating rating={myRating} onRatingChange={handleRatingChange} />    
+                </h5>
+
+
+
                 <h5 style={{ marginBottom: '4px' }}> My Review: </h5>
                 
                 {/* Text entry box for the review */}
