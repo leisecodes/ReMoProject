@@ -1,5 +1,6 @@
 import React from 'react';
 import goalImg from "../../images/goal.jpg";
+import user from "../profilePage/profile.json";
 function Goals (props) {
     return (
         <div>
@@ -23,7 +24,7 @@ function Goals (props) {
                         </center>
                     </div>
                     <div class="row text-center p-3">
-                        <h2>X of 3 Completed</h2>
+                        {user.readCount >= user.goals.voteGoal ? <h2> Goal Achieved! </h2> : <h2> {user.readCount} of 3 Completed</h2>}
                     </div>
                 </div>
             </div>
@@ -41,7 +42,7 @@ function Goals (props) {
                         </center>
                     </div>
                     <div class="row text-center p-3">
-                        <h2>X of Y Completed</h2>
+                    {(user.readCount >= user.goals.personalGoal) ? <h2> Goal Achieved! </h2> : <h2>{user.readCount} of {user.goals.personalGoal} Completed</h2>}
                     </div>
                 </div>
             </div>
@@ -59,7 +60,7 @@ function Goals (props) {
                         </center>
                     </div>
                     <div class="row text-center p-3">
-                        <h2>X of 10 Completed</h2>
+                    {(user.readCount >= user.goals.starGoal) ? <h2> Goal Achieved! </h2> : <h2>{user.readCount} of {user.goals.starGoal} Completed</h2>}
                     </div>
                 </div>
             </div>
@@ -77,7 +78,7 @@ function Goals (props) {
                         </center>
                     </div>
                     <div class="row text-center p-3">
-                        <h2>X of Z Completed</h2>
+                    {(user.readCount >= user.goals.challengeGoal) ? <h2> Goal Achieved! </h2> : <h2>{user.readCount} of {user.goals.challengeGoal} Completed</h2>}
                     </div>
                 </div>
             </div>
