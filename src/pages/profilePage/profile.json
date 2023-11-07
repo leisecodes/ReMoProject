@@ -1,0 +1,28 @@
+{
+"_id":{"$oid":"6538085ab10ada3a007ee5d0"},
+"studentID":"2",
+"firstName":"Bob",
+"lastName":"Johnson",
+"preferredName":"Bob",
+"pronouns":"he/him",
+"login":{
+    "username":"bob456",
+    "password":"strongpass123"},
+"grade": "4",
+"ethnicity":"African American",
+"schoolName":"Willow High School",
+"libraryName":"Willow City Library",
+"goals":{
+    "voteGoal": "3",
+    "challengeGoal": "5",
+    "starGoal": "10",
+    "personalGoal": "10"},
+"readCount":"5",
+"birthday":"2004-08-22",
+"imageLink":"https://images.twinkl.co.uk/tw1n/image/private/t_630/u/ux/greg-excited_ver_1.jpg",
+"voteCount":"3",
+"backgroundColor": "5",
+"studentAccessLevel":{
+    "libraryAccessLevel":"Full Access",
+    "schoolAccessLevel":"Full Access"}
+}

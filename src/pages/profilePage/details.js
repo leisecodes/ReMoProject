@@ -1,12 +1,13 @@
 import React from "react";
 import profileImg from "../../images/profileimg.jpg";
+import user from "./profile.json";
 
 function Details () {
     return(
         <div >
             <div class= "profilePhoto row justify-content-start align-items-end mt-4">
                 <div class="col-2">
-                <img src={profileImg} alt="student profile" class = "studentImg rounded-circle border border-dark" width="100px" height="100px" />
+                <img src={user.imageLink} alt="student profile" class = "studentImg rounded-circle border border-dark" width="100px" height="100px" />
                 </div>
                 <div class=" col-auto ms-4">
                     <div class="row">
@@ -17,12 +18,12 @@ function Details () {
                 
             </div>  
             <div class = "row mt-4">
-                <p>Student Name</p>
-                <p>Preferred Name</p>
-                <p>Student Pronouns</p>
-                <p>Student School</p>
-                <p>Student Grade Level</p>
-                <p>Student Birthday</p>
+                <p>Name: {user.firstName} {user.lastName}</p>
+                <p>Preferred Name: {user.preferredName}</p>
+                <p>Pronouns: {user.pronouns}</p>
+                <p>School: {user.schoolName}</p>
+                <p>Grade Level: {user.grade}</p>
+                <p>Birthday: {user.birthday}</p>
                 
             </div>
             <div class = "row align-items-center">
