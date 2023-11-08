@@ -5,7 +5,7 @@ import user from "./profile.json";
 function Details () {
     return(
         <div >
-            <div class= "profilePhoto row justify-content-start align-items-end mt-4">
+            <div class= "profilePhoto row justify-content-start align-items-end">
                 <div class="col-2">
                 <img src={user.imageLink} alt="student profile" class = "studentImg rounded-circle border border-dark" width="100px" height="100px" />
                 </div>
