@@ -1,6 +1,7 @@
 import React from 'react';
 import goalImg from "../../images/goal.jpg";
 import voteimg from "../../images/voteimg.jpg";
+import starimg from "../../images/starimg.png";
 import user from "../profilePage/profile.json";
 function Goals (props) {
     return (
@@ -56,7 +57,7 @@ function Goals (props) {
                     <div class="row align-items-center p-4">
                         <center>
                             <div class="col">
-                                <img src={goalImg} alt='goal' width="100px" height="100px"/>
+                                <img src={starimg} alt='goal' width="100px" height="100px"/>
                             </div>
                         </center>
                     </div>
