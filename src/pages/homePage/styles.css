@@ -8,7 +8,7 @@
 
 .images-container {
   display: flex;
-  max-width: 500px;
+  max-width: 1000px;
   overflow: scroll;
   scroll-behavior: smooth;
   transition: scroll 0.3s ease-in-out;
@@ -16,7 +16,7 @@
 
 .image {
   width: 200px;
-  height: 200px;
+  height: 300px;
   margin: 5px;
   border-radius: 8px;
 }
