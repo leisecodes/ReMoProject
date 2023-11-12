@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./styles.css";
-import goalImg from "../../images/goal.jpg";
+import goalImg from "../../../images/goal.jpg";
 import { Outlet, Link, } from "react-router-dom";
 
 export default function ScrollBar() {
@@ -9,33 +9,33 @@ export default function ScrollBar() {
   const images = [
       {
         id: 1,
-        src: require('../../images/BookCovers/Lifeling.jpg'),
-        link:'/books'
+        src: require('../../../images/BookCovers/Lifeling.jpg'),
+        link:'/books/detail'
       },
       {
         id: 2,
-        src: require('../../images/BookCovers/Thirst.jpg'),
-        link:'/books'
+        src: require('../../../images/BookCovers/Thirst.jpg'),
+        link:'/books/detail'
       },
       {
         id: 3,
-        src: require('../../images/BookCovers/Life and Crimes of Hoodie Rosen.jpg'),
-        link:'/books'
+        src: require('../../../images/BookCovers/Life and Crimes of Hoodie Rosen.jpg'),
+        link:'/books/detail'
       },
       {
         id: 4,
-        src: require('../../images/BookCovers/Voices of the People.jpg'),
-        link:'/books'
+        src: require('../../../images/BookCovers/Voices of the People.jpg'),
+        link:'/books/detail'
       },
       {
         id: 5,
-        src: require('../../images/BookCovers/Wild Ride.jpg'),
-        link:'/books'
+        src: require('../../../images/BookCovers/Wild Ride.jpg'),
+        link:'/books/detail'
       },
       {
         id: 6,
-        src: require('../../images/BookCovers/Troublemaker.jpg'),
-        link:'/books'
+        src: require('../../../images/BookCovers/Troublemaker.jpg'),
+        link:'/books/detail'
       }
     ];
 

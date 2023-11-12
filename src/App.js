@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 import ProfilePage from './pages/profilePage';
 import BookPage from './pages/bookPage';
+import BookDetail from './pages/bookDetail'
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Route path="/" element= {<HomePage/>}/>
           <Route path="/profile" element= {<ProfilePage/>}/>
           <Route path="/books" element= {<BookPage/>}/>
+          <Route path="/books/detail" element= {<BookDetail/>}/>
+
         </Routes>
     </Router>
    
