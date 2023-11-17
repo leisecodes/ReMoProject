@@ -74,7 +74,7 @@
 /*book banner container*/
 .book-banner {
     display: flex;
-
+    overflow-x: hidden;
     margin-bottom: 5px;
   }
   
