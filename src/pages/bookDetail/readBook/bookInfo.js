@@ -57,7 +57,7 @@ function BookInfo() {
                 <textarea
                     rows="4" 
                     cols="50" 
-                    placeholder="Enter your review here..." // A placeholder text
+                    placeholder="Enter your review here..." 
                     style={{
                         background: 'linear-gradient(to bottom, #f5f5f5, #f0f0f0)',
                         border: '1px solid #ccc',
@@ -67,9 +67,9 @@ function BookInfo() {
                 ></textarea>
 
 
-                {/* Button references here */}
+                {/* Quick Feeling Buttons */}
                 <div className="button-container">
-                    {/* Assign class names to buttons for different colors */}
+                  
                     <button className="review-button action-packed-button">
                         Action-packed
                     </button>
@@ -81,6 +81,7 @@ function BookInfo() {
                     </button>
                 </div>
 
+                {/* Action Buttons */}
                 <div className="large-button-container">
                     <button className="submit-button" style={{backgroundColor:'#052489' }}>
                         Submit
