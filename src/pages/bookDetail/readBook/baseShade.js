@@ -3,7 +3,7 @@ import '../book.css';
 
 function BaseShade () {
 
-    const container = {
+    const containerColors = {
         position: 'fixed',
         bottom: 0,
         width: '100%',
@@ -12,7 +12,7 @@ function BaseShade () {
       };
     
     return (
-        <div style={container}>
+        <div style={containerColors}>
           <div className="yellow-line"></div>
           <div className="green-line"></div>
         </div>

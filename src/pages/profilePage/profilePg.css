@@ -1,0 +1,80 @@
+
+.profile-label {
+    margin-top: 10px; 
+}
+
+/* Profile details container*/
+.profile-info-container {
+    border: 2px solid #661c78; 
+    padding: 20px; 
+    background-color: #d1f1f3; 
+    margin-top: 10px; 
+    border-radius: 10px; /* Add rounded edges */
+    width: 600px;
+    height: 650px;
+  }
+
+
+  /* Badges container*/
+.badge-info-container {
+    border: 2px solid #661c78; 
+    padding: 20px; 
+    background-color: #d1f1f3; 
+    margin-top: 100px; 
+    border-radius: 10px; /* Add rounded edges */
+    width: 600px;
+    height: 450px;
+    
+  }
+
+
+  .badge-label {
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+
+  /* separator (colored line) detail */
+.separator-container {
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+  }
+  
+  
+  .separator-style-p1 {
+    border-top: 1px solid #E35205;
+    margin: 2px 1px 10px 1px;
+    border-radius: 1rem;
+    position: relative;
+    width: 100%;
+  }
+
+  .separator-style-p2 {
+    border-top: 1px solid #E35205;
+    margin: 35px 1px 20px 1px;
+    border-radius: 1rem;
+    position: relative;
+    width: 100%;
+  }
+
+  .separator-style-p3 {
+    border-top: 1px solid #E35205;
+    margin: 95px 1px 20px 1px;
+    border-radius: 1rem;
+    position: relative;
+    width: 100vw;
+  }
+
+  .profile-field-label-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00B2A9; 
+    margin: 15px 1px 0px 1px;
+
+  }
+
+  .profile-field-name {
+    font-size: 16px;
+    margin: 20px 1px 0px 1px;
+
+  }

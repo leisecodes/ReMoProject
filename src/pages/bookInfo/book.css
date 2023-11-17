@@ -52,12 +52,7 @@
   
 
 
-/* BaseShade.css -> colored lines at bottom of book pages */
-.container {
-    position: fixed;
-    bottom: 0;
-    width: 100% ;
-  }
+
   
 .green-line {
     height: 25px;
