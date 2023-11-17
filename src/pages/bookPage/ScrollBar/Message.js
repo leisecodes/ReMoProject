@@ -9,7 +9,7 @@ function Message (props) {
           
             </div>
             <div class="row text-center">
-                <h1 class="message-1">Unread Books</h1>
+                <h1 class="message-1">Read Books</h1>
             </div>
         </div>
     );

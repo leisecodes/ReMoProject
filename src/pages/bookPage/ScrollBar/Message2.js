@@ -7,7 +7,7 @@ function Message2 (props) {
                  <div className="separator-style-2"></div>
             </div>
             <div class="row text-center ">
-                <h1 class="message-2">Read Books</h1>
+                <h1 class="message-2">Unread Books</h1>
             </div>
         </div>
     );
