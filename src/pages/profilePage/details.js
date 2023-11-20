@@ -1,10 +1,12 @@
 import React from "react";
 import profileImg from "../../images/profileimg.jpg";
 import user from "./profile.json";
+import "./profilePg.css";
+
 
 function Details () {
     return(
-        <div >
+        <div className="profile-info-container">
             <div class= "profilePhoto row justify-content-start align-items-end">
                 <div class="col-2">
                 <img src={user.imageLink} alt="student profile" class = "studentImg rounded-circle border border-dark" width="100px" height="100px" />
@@ -14,11 +16,18 @@ function Details () {
                     <input type="file" />
                     </div>
                     <button class="btn btn-outline-secondary mt-1" type="button" id="inputGroupFileAddon04" >Save Image</button>
-                </div>
-                
+                </div>    
             </div>  
+
             <div class = "row mt-4">
-                <p>Name: {user.firstName} {user.lastName}</p>
+                <div className="col">
+                    <p class="profile-field-label-name">Name: 
+                    </p>
+                </div>
+                    <div className="col-8 profile-field-name">
+                    <p >{user.firstName} {user.lastName}
+                    </p>
+                </div>
                 <p>Preferred Name: {user.preferredName}</p>
                 <p>Pronouns: {user.pronouns}</p>
                 <p>School: {user.schoolName}</p>
@@ -26,6 +35,12 @@ function Details () {
                 <p>Birthday: {user.birthday}</p>
                 
             </div>
+
+
+            <div className="separator-container">
+                <div className="separator-style-p3"></div>
+            </div>
+
             <div class = "row align-items-center">
                 <div class = "col-3">
                 <button class= "btn btn-outline-secondary" type="button" id="editProfileBtn"> Edit Profile </button>

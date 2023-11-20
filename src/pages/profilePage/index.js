@@ -5,16 +5,32 @@ import BadgeContainer from "./badgeContainer";
 function ProfilePage() {
     return(
         <div class="container">
+
+
+                <div className="separator-container">
+                    <div className="separator-style-p1"></div>
+                </div>
+
             <div class="row">
+
+                <h1 class="profile-label">My Profile</h1>
+
+                <div className="separator-container">
+                    <div className="separator-style-p2"></div>
+                </div>
+
                 <div class="col-6">
-                <h1>My Profile</h1>
                     <Details/>
                 </div>
+
                 <div class= "col-6">
                     <BadgeContainer/>
                 </div>
+
+                
             </div>
-            
+
+      
 
         </div>
     );

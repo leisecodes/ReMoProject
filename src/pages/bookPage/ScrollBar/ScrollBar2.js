@@ -10,32 +10,32 @@ export default function ScrollBar() {
       {
         id: 1,
         src: require('../../../images/BookCovers/Lifeling.jpg'),
-        link:'/books/detail'
+        link:'/books/info'
       },
       {
         id: 2,
         src: require('../../../images/BookCovers/Thirst.jpg'),
-        link:'/books/detail'
+        link:'/books/info'
       },
       {
         id: 3,
         src: require('../../../images/BookCovers/Life and Crimes of Hoodie Rosen.jpg'),
-        link:'/books/detail'
+        link:'/books/info'
       },
       {
         id: 4,
         src: require('../../../images/BookCovers/Voices of the People.jpg'),
-        link:'/books/detail'
+        link:'/books/info'
       },
       {
         id: 5,
         src: require('../../../images/BookCovers/Wild Ride.jpg'),
-        link:'/books/detail'
+        link:'/books/info'
       },
       {
         id: 6,
         src: require('../../../images/BookCovers/Troublemaker.jpg'),
-        link:'/books/detail'
+        link:'/books/info'
       }
     ];
 

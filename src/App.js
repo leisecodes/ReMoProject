@@ -10,6 +10,7 @@ import {
 import ProfilePage from './pages/profilePage';
 import BookPage from './pages/bookPage';
 import BookDetail from './pages/bookDetail'
+import BookInfo from './pages/bookInfo'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/profile" element= {<ProfilePage/>}/>
           <Route path="/books" element= {<BookPage/>}/>
           <Route path="/books/detail" element= {<BookDetail/>}/>
+          <Route path="/books/info" element= {<BookInfo/>}/>
 
         </Routes>
     </Router>

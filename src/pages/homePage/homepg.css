@@ -1,0 +1,102 @@
+
+
+
+/* Goals.css */
+.goals-title {
+    color: #00B2A9;
+    margin-bottom: 0px; 
+    margin-top: 10px;
+  }
+
+.goal-card-margin-left {
+    margin-left: 25px; /* Add left margin */
+    margin-right: 5px; /* Add right margin */
+}
+.goal-card-margin-right {
+    margin-left: 5px; /* Add left margin */
+    margin-right: 25px; /* Add right margin */
+}
+
+/* rounded corners for goal images*/
+.container-md img {
+    border-radius: 50%; 
+}
+
+/* Add new classes for each goal card with different background colors */
+.goal-card-1 {
+    border: 2px solid #661c78 ; 
+    border-radius: 10px;
+    background-color: #fff; 
+}
+
+.goal-card-2 {
+    border: 2px solid #9e4dab ; 
+    border-radius: 10px;
+    background-color: #fff; 
+}
+
+.goal-card-3 {
+    border: 2px solid #E35205 ; 
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.goal-card-4 { 
+    border: 2px solid #ED8B00 ; 
+    border-radius: 10px;
+    background-color: #fff;
+}   
+
+/*color of top label for each voting card*/
+.goal-label-1 {
+    color: #661c78; /* Voting Goal color */
+  }
+  
+  .goal-label-2 {
+    color: #9e4dab; /* Personal Goal color */
+  }
+  
+  .goal-label-3 {
+    color: #E35205; /* Star Reader color */
+  }
+  
+  .goal-label-4 {
+    color: #ED8B00; /* Challenge Goal color */
+  }
+
+
+
+/* color of #books read in greeting & on goal cards*/
+.read-count {
+  color: #00B2A9; /* Set the desired color here */
+}
+
+/*book banner container*/
+.book-banner {
+    display: flex;
+    overflow-x: hidden;
+    margin-bottom: 5px;
+  }
+  
+/*book banner book coves*/
+  .book-cover {
+    width: 170px; /* Width for each book cover */
+    height: 190px; /* height for each book cover */
+    margin-right: 0px; /* Margin between book covers */
+    flex-shrink: 0;
+    flex: 1;
+    
+  }
+
+  /*shading for greeting*/
+  .greeting-container {
+    background-color: #d1f1f3; /* Soft teal color */
+    padding: 20px; /* padding  */
+    padding-top: 10px;
+    padding-bottom: px;
+    margin-bottom: 2px;
+    flex: 1;
+    justify-content: center;
+    max-width: 99%;
+    box-sizing: content-box;
+}

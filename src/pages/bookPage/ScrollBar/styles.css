@@ -1,9 +1,12 @@
+
+/* Scrollbar containers, spacing, etc.*/
 .ScrollBar {
   font-family: sans-serif;
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 .images-container {
@@ -31,6 +34,71 @@
   background-color: #c3c3c3;
   border-radius: 6px;
   height: 200px;
-  width: 30px;
+  width: 40px;
   margin: 5px;
+}
+
+/* Label spacing for text above scrollbars*/
+.message-1 {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.message-2 {
+  margin-top: 25px;
+  padding: 5px;
+}
+
+.message-3 {
+  margin-top: 50px;
+  padding: 5px;
+}
+
+/* separator (colored line) detail */
+.separator-container {
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  
+  
+}
+
+
+.separator-style-1 {
+  border-top: 1px solid #00B2A9;
+  margin: 65px 1px 1px 1px;
+  border-radius: 1rem;
+  position: relative;
+  width: 89%
+}
+
+.separator-style-2 {
+  border-top: 1px solid #00B2A9;
+  margin: 40px 1px 1px 1px;
+  border-radius: 1rem;
+  position: relative;
+  width: 89%
+}
+
+.separator-style-3 {
+  border-top: 1px solid #00B2A9;
+  margin: 40px 1px 0.5px 1px;
+  border-radius: 1rem;
+  position: relative;
+  width: 89%
+}
+
+.separator-style-4 {
+  border-top: 1px solid #661c78;
+  margin: 0px 1px 1px 1px;
+  border-radius: 1rem;
+  position: relative;
+  width: 89%
+}
+
+.separator-style-5 {
+  border-top: 1px solid #661c78;
+  margin: 220px 1px 280px 1px; /*change top once 3rd scrollbar is in*/
+  border-radius: 1rem;
+  position: relative;
+  width: 89%
 }
