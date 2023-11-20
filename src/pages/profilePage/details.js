@@ -1,15 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from "react-router";
+import { profileThunk, logoutThunk, updateUserThunk } from "../../services/auth-thunks";
 import profileImg from "../../images/profileimg.jpg";
 import user from "./profile.json";
+
 import "./profilePg.css";
 
 
 function Details () {
-    return(
+    //const { currentUser } = useSelector((state)=>state.user);
+    const currentUser = user;
+    const [ profile, setProfile ] = useState(currentUser);
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const save = async () => {await dispatch(updateUserThunk(profile)); };
+    useEffect(() => {
+        const loadProfile = async () => {
+        const { payload } = await dispatch(profileThunk());
+        setProfile(payload);
+        };
+    loadProfile();
+    }, []);
+        return(
         <div className="profile-info-container">
+            <div>
             <div class= "profilePhoto row justify-content-start align-items-end">
                 <div class="col-2">
-                <img src={user.imageLink} alt="student profile" class = "studentImg rounded-circle border border-dark" width="100px" height="100px" />
+                <img src={currentUser.imageLink} alt="student profile" class = "studentImg rounded-circle border border-dark" width="100px" height="100px" />
                 </div>
                 <div class=" col-auto ms-4">
                     <div class="row">
@@ -25,15 +43,16 @@ function Details () {
                     </p>
                 </div>
                     <div className="col-8 profile-field-name">
-                    <p >{user.firstName} {user.lastName}
+                    <p >{currentUser.firstName} {currentUser.lastName}
                     </p>
                 </div>
-                <p>Preferred Name: {user.preferredName}</p>
-                <p>Pronouns: {user.pronouns}</p>
-                <p>School: {user.schoolName}</p>
-                <p>Grade Level: {user.grade}</p>
-                <p>Birthday: {user.birthday}</p>
+                <p>Preferred Name: {currentUser.preferredName}</p>
+                <p>Pronouns: {currentUser.pronouns}</p>
+                <p>School: {currentUser.schoolName}</p>
+                <p>Grade Level: {currentUser.grade}</p>
+                <p>Birthday: {currentUser.birthday}</p>
                 
+            </div>
             </div>
 
 
@@ -55,6 +74,6 @@ function Details () {
                 </div>
             </div>
         </div>
-    );
+        );
 }
 export default Details;

@@ -20,7 +20,7 @@ function Login() {
             <h1>Login</h1>
             <div className="mt-2">
                 <label>Student ID</label>
-                <input className="form-control" type="number" value= {sid} onChange={(event)=>setSid(event.target.value)}/>
+                <input className="form-control" type="text" value= {sid} onChange={(event)=>setSid(event.target.value)}/>
             </div>
             <button className="btn btn-primary mt-2" onClick={handleLogin}>
                 Login

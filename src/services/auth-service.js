@@ -1,13 +1,14 @@
 import axios from 'axios';
 
 const SERVER_API_URL = process.env.MSBA_SERVER_API_URL;
-const USERS_URL = `${SERVER_API_URL}/users`;
+const USERS_URL = `${SERVER_API_URL}/students`;
 
 const api = axios.create({ withCredentials: true });
 
 export const login = async ({ sid }) => {
     const response = await api.post(`${USERS_URL}/login`, { sid });
     const user = response.data;
+    console.log(user);
     return user;
     
 };
