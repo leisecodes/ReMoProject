@@ -3,6 +3,7 @@ import './App.css';
 import HomePage from './pages/homePage';
 import NavBar from './components/navBar';
 import Login from './pages/loginScreen/login.js';
+import PracticePage from './pages/practicePage/practicePage.js';
 import {
   BrowserRouter as Router,
   Routes,
@@ -14,10 +15,10 @@ import BookDetail from './pages/bookDetail'
 import BookInfo from './pages/bookInfo'
 import studentReducer from "./reducers/students-reducer.js";
 import booksReducer from "./reducers/books-reducer.js"
-import authReducer from './reducers/auth-reducer.js';
 import inputsReducer from './reducers/inputs-reducer.js';
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
+import authReducer from './reducers/auth-reducer.js';
 
 const store = configureStore(
   {reducer: {user: authReducer}}
@@ -34,6 +35,7 @@ function App() {
           <Route path="/books/detail" element= {<BookDetail/>}/>
           <Route path="/books/info" element= {<BookInfo/>}/>
           <Route path="/login" element = {<Login/>}/>
+          <Route path="/practice" element = {<PracticePage/>}/>
 
         </Routes>
     </Router>

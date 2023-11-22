@@ -9,6 +9,7 @@ const initialState = {
 
 const studentsSlice = createSlice({
     name: 'students',
+    initialState,
     extraReducers: {
         [findStudentsThunk.pending]:
             (state) => {
