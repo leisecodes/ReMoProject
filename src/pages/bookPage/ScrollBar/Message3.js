@@ -12,9 +12,7 @@ function Message (props) {
             <div class="row text-center">
                 <h1 class="message-3">To Be Read Books (My TBR)</h1>
             </div>
-            <div className="separator-container">
-                <div className="separator-style-5"></div>
-            </div>
+           
         </div>
     );
 };

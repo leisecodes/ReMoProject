@@ -1,0 +1,63 @@
+.login-container {
+    width: 380px;
+    margin: 30px auto ;
+    padding: 20px;
+    border: 3px solid #00B2A9;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+
+  .un-input-container {
+    margin-bottom: 15px;
+  }
+
+  .pw-input-container {
+    margin-bottom: 15px;
+  }
+
+  .login-button-container {
+    text-align: center;
+  
+  }
+
+  .btn-primary {
+    width: 85%;
+    font-weight: bold;
+    background-color: #E35205;
+    border: none;
+  }
+
+  .opener-style {
+    font-weight: bold;
+    text-align: center;
+    color: #661c78;
+  }
+
+  .login-background-container {
+    background-color: #d1f1f3;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    z-index: -1;
+    height: 65vh;
+    padding-top: 30px;
+  }
+
+.power-text-container {
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.power-text-container p {
+    margin-right: 10px; /* Add spacing between text and logo */
+   
+    margin-bottom: 3px; /* Vertical centering of text against logo*/
+}
+
+.power-text-container img {
+    width: 100px;
+    height: auto;
+}

@@ -2,7 +2,7 @@ import React from "react";
 
 function BadgeContainer() {
     return(
-        <div class="container-md badge-info-container">
+        <div class=" badge-info-container">
             <div class="row text-center p-3">
                 <h3 class="badge-label">My Badges</h3>
             </div>
