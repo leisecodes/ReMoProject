@@ -4,6 +4,9 @@ import { useNavigate } from "react-router";
 import { profileThunk, logoutThunk, updateUserThunk } from "../../services/auth-thunks";
 import profileImg from "../../images/profileimg.jpg";
 import user from "./profile.json";
+import schoolIcon from "../../images/schoolImg3.png";
+import gradeIcon from "../../images/gradeImg.png";
+import birthdayIcon from "../../images/bdayImg.png";
 
 import "./profilePg.css";
 
@@ -56,12 +59,21 @@ function Details () {
                     <p className="profile-field-label-name">Name:</p>
                     <p className="profile-field-label-pName">Preferred Name:</p>
                     <p className="profile-field-label-pronoun">Pronouns:</p>
-                    <p className="profile-field-label-school">School:</p>
-                    <p className="profile-field-label-grade">Grade Level:</p>
-                    <p className="profile-field-label-birthday">Birthday:</p>
+                    <p className="profile-field-label-school">
+                        <img src={schoolIcon} alt="School Icon" className="profile-text-icon" />
+                        School:
+                    </p>
+                    <p className="profile-field-label-grade">
+                        <img src={gradeIcon} alt="Grade Icon" className="profile-text-icon" />
+                        Grade Level:
+                    </p>
+                    <p className="profile-field-label-birthday">
+                        <img src={birthdayIcon} alt="Birthday Icon" className="profile-text-icon" />
+                        Birthday:
+                    </p>
                 </div>
                 <div className="col-7 profile-field-name">
-                    <p>{currentUser.firstName} {currentUser.lastName}</p>
+                    <p className="profile-field-fName">{currentUser.firstName} {currentUser.lastName}</p>
                     <p className="profile-field-pName">{currentUser.preferredName}</p>
                     <p className="profile-field-pronoun">{currentUser.pronouns}</p>
                     <p className="profile-field-school">{currentUser.schoolName}</p>

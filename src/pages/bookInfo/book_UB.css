@@ -1,0 +1,179 @@
+/* tags.css -> tag, mark as read, and TBR buttons on R & Ur Books pages*/
+.tags-UB {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+  }
+  
+.tag-button-UB {
+    border: none;
+    border-radius: 50%;
+    width: 85px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+  }
+  
+.lg-button-UB {
+    border: none;
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 20px 10px 55px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+.tag-color-1-UB {
+    background-color: #661c78;
+  }
+  
+.tag-color-2-UB {
+    background-color: #9e4dab;
+  }
+  
+.tag-color-3-UB {
+    background-color: #E35205;
+  }
+  
+.tag-color-4-UB {
+    background-color: #ED8B00;
+  }
+  
+
+
+
+  
+.bottom-line2-UB {
+    height: 25px;
+    background-color: #00B2A9;
+  }
+  
+.bottom-line1-UB {
+    height: 2px; /* Adjust the thickness of the yellow line */
+    background-color: #ED8B00;
+  }
+  
+  /* separator.css */
+.separator-style-UB {
+    border-top: 4.15px solid #00B2A9;
+    width: 90%;
+    margin: 0cm 1cm 0.25cm 1cm;
+    border-radius: 1rem;
+    position: relative;
+  }
+  
+.inner-separator-style-UB {
+    border-top: 1px solid #9e4dab;
+    width: 99.9%;
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+    /* separator.css */
+.info-separator-style-UB {
+  border-top: 1px solid #00B2A9;
+  width: 95%;
+  margin: 55px 0px 0px 0px;
+  border-radius: 1rem;
+  position: relative;
+}
+
+
+  
+  /* pgHeader.css -> holds the back button and label for Book Details*/
+.header-container-UB {
+    display: flex;
+    align-items: center;
+  }
+  
+.back-button-UB {
+    background-color: #FF5733;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    margin-left: 1.3cm;
+  }
+  
+.book-details-UB {
+    margin-left: 0.8cm;
+  }
+  
+.arrow-UB {
+    font-size: 40px;
+  }
+  
+  /* Reduce the margin between Book Details and (Unread Book) */
+.book-details-UB span {
+    margin: 0; 
+    padding: 0;
+  }
+
+  .book-details-label-UB {
+    margin: 0; 
+    padding: 0;
+  }
+
+
+  /* bookInfo.css -> allows for the cover image and captures tags and book info*/
+.bookInfoContainer-UB {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.coverImage-UB img {
+    width: 420px;
+    height: 370px;
+    margin: 20px 90px;
+}
+
+.coverImageRd img {
+    width: 325px;
+    height: 420px;
+    margin: 20px 90px;
+}
+
+.bookInfoStyle-UB {
+    border: 1px solid #000;
+    width: 575px;
+    height: 430px;
+    padding: 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -20,13 +20,11 @@ function ProfilePage() {
                 </div>
 
                 <div className="profile-container">
-                    <div class="col-6 mb-3">
-                        <Details/>
-                    </div>
 
-                    <div class= "col-6 mb-3">
+                        <Details/>
+
                         <BadgeContainer/>
-                    </div>
+                
                 </div>
 
                 
