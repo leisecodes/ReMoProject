@@ -12,19 +12,7 @@ const PracticeBookDetails = () => {
     useEffect(()=> {
         dispatch(findBooksThunk())
     }, [])
-    //const book = books.find((book)=> book.bookID===Number(id));
-
-    /*const [book, setBook] = useState(null);
-    const dispatch = useDispatch();
-
-    useEffect(() => {
-        async function fetchBookDetails(id) {
-            const {payload} = await dispatch(findOneBookThunk());
-            console.log(payload);
-            setBook(payload);
-        }
-        fetchBookDetails()
-    }, [id]);*/
+    
 
     return(
         <div>

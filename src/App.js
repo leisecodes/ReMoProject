@@ -21,6 +21,7 @@ import inputsReducer from './reducers/inputs-reducer.js';
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import authReducer from './reducers/auth-reducer.js';
+import UnreadBook from './pages/bookInfo/unreadBook/index.js';
 
 const store = configureStore(
   {reducer: {user: authReducer, books: booksReducer, book: booksReducer}}
@@ -39,7 +40,7 @@ function App() {
           <Route path="/login" element = {<Login/>}/>
           <Route path="/practice" element = {<PracticePage/>}/>
           <Route path= "/booklist" element = {<BooksList/>}/>
-          <Route path= "/bookdetails/:id" element = {<PracticeBookDetails/>}/>
+          <Route path= "/bookdetails/:id" element = {<UnreadBook/>}/>
 
         </Routes>
     </Router>
