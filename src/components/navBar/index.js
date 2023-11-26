@@ -12,7 +12,7 @@ import {
 function NavBar(){
     return (
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand ms-3" href="#">
+            <a class="navbar-brand ms-3" href="/">
                 <img src={logo} alt='Maine Student Book Award' width="127" height="99"/>
                 Maine Student Book Award
             </a>

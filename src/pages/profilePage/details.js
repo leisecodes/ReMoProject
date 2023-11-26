@@ -9,25 +9,30 @@ import "./profilePg.css";
 
 
 function Details () {
-    //const { currentUser } = useSelector((state)=>state.user);
-    const currentUser = user;
-    const [ profile, setProfile ] = useState(currentUser);
+    const { currentUser } = useSelector((state)=>state.user);
+    //const currentUser = user;
+    const [profile, setProfile] = useState(currentUser);
     const dispatch = useDispatch();
     const navigate = useNavigate();
-    const save = async () => {await dispatch(updateUserThunk(profile)); };
+    const save = () => {
+        dispatch(updateUserThunk(profile));
+    };
     useEffect(() => {
-        const loadProfile = async () => {
-        const { payload } = await dispatch(profileThunk());
-        setProfile(payload);
-        };
-    loadProfile();
+        async function fetchData() {
+            const {payload} = await dispatch(profileThunk());
+            console.log(payload);
+            setProfile(payload);
+        }
+        fetchData()
     }, []);
         return(
+            <div>
+            {profile && (
         <div className="profile-info-container">
             <div>
             <div class= "profilePhoto row justify-content-start align-items-end">
                 <div class="col-2">
-                <img src={currentUser.imageLink} alt="student profile" class = "studentImg rounded-circle border border-dark" width="100px" height="100px" />
+                <img src={profile.imageLink} alt="student profile" class = "studentImg rounded-circle border border-dark" width="100px" height="100px" />
                 </div>
                 <div class=" col-auto ms-4">
                     <div class="row">
@@ -43,18 +48,19 @@ function Details () {
                     </p>
                 </div>
                     <div className="col-8 profile-field-name">
-                    <p >{currentUser.firstName} {currentUser.lastName}
+                    <p >{profile.firstName} {profile.lastName}
                     </p>
                 </div>
-                <p>Preferred Name: {currentUser.preferredName}</p>
-                <p>Pronouns: {currentUser.pronouns}</p>
-                <p>School: {currentUser.schoolName}</p>
-                <p>Grade Level: {currentUser.grade}</p>
-                <p>Birthday: {currentUser.birthday}</p>
+                <p>Preferred Name: {profile.preferredName}</p>
+                <p>Pronouns: {profile.pronouns}</p>
+                <p>School: {profile.schoolName}</p>
+                <p>Grade Level: {profile.grade}</p>
+                <p>Birthday: {profile.birthday}</p>
                 
             </div>
             </div>
-
+            </div>
+)}
 
             <div className="separator-container">
                 <div className="separator-style-p3"></div>
@@ -74,6 +80,5 @@ function Details () {
                 </div>
             </div>
         </div>
-        );
-}
+        ); }
 export default Details;

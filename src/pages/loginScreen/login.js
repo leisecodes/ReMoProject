@@ -11,7 +11,7 @@ function Login() {
     const handleLogin = async () => {
         try {
             await dispatch(loginThunk({ username, password }));
-            navigate("/practice");
+            navigate("/profile");
         } catch (e) {
             alert (e);
         }

@@ -1,7 +1,9 @@
 import axios from 'axios';
 
-const SERVER_API_URL = process.env.MSBA_SERVER_API_URL;
-const USERS_URL = `${SERVER_API_URL}/students`;
+//const SERVER_API_URL = 'http://localhost:5000/api';
+//const USERS_URL = `${SERVER_API_URL}/students`;
+
+const USERS_URL = 'https://remo-project-server.onrender.com/api/students';
 
 const api = axios.create({ withCredentials: true });
 

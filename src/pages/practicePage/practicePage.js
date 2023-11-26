@@ -6,6 +6,8 @@ import profileImg from "../../images/profileimg.jpg";
 //import user from "../profilePage/profile.json";
 
 import "../profilePage/profilePg.css";
+import PracticeBookDetails from "./practiceBookDetails";
+
 
 function PracticePage () {
     const { currentUser } = useSelector((state)=>state.user);

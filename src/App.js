@@ -4,6 +4,7 @@ import HomePage from './pages/homePage';
 import NavBar from './components/navBar';
 import Login from './pages/loginScreen/login.js';
 import PracticePage from './pages/practicePage/practicePage.js';
+import BooksList from './pages/practicePage/practiceBookList.js';
 import {
   BrowserRouter as Router,
   Routes,
@@ -13,6 +14,7 @@ import ProfilePage from './pages/profilePage';
 import BookPage from './pages/bookPage';
 import BookDetail from './pages/bookDetail'
 import BookInfo from './pages/bookInfo'
+import PracticeBookDetails from './pages/practicePage/practiceBookDetails.js';
 import studentReducer from "./reducers/students-reducer.js";
 import booksReducer from "./reducers/books-reducer.js"
 import inputsReducer from './reducers/inputs-reducer.js';
@@ -21,7 +23,7 @@ import { Provider } from 'react-redux';
 import authReducer from './reducers/auth-reducer.js';
 
 const store = configureStore(
-  {reducer: {user: authReducer}}
+  {reducer: {user: authReducer, books: booksReducer, book: booksReducer}}
 );
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
           <Route path="/books/info" element= {<BookInfo/>}/>
           <Route path="/login" element = {<Login/>}/>
           <Route path="/practice" element = {<PracticePage/>}/>
+          <Route path= "/booklist" element = {<BooksList/>}/>
+          <Route path= "/bookdetails/:id" element = {<PracticeBookDetails/>}/>
 
         </Routes>
     </Router>
