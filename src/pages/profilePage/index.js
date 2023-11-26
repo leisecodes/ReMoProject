@@ -19,12 +19,12 @@ function ProfilePage() {
                     <div className="separator-style-p2"></div>
                 </div>
 
-                <div class="col-6">
-                    <Details/>
-                </div>
+                <div className="profile-container">
 
-                <div class= "col-6">
-                    <BadgeContainer/>
+                        <Details/>
+
+                        <BadgeContainer/>
+                
                 </div>
 
                 

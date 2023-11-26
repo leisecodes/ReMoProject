@@ -1,5 +1,5 @@
 import React from 'react';
-import '../book.css';
+import '../book_UB.css';
 
 function BaseShade () {
 
@@ -13,8 +13,8 @@ function BaseShade () {
     
     return (
         <div style={container}>
-          <div className="yellow-line"></div>
-          <div className="green-line"></div>
+          <div className="bottom-line1-UB"></div>
+          <div className="bottom-line2-UB"></div>
         </div>
       );
     

@@ -5,8 +5,8 @@ const USERS_URL = `${SERVER_API_URL}/students`;
 
 const api = axios.create({ withCredentials: true });
 
-export const login = async ({ sid }) => {
-    const response = await api.post(`${USERS_URL}/login`, { sid });
+export const login = async ({ username, password }) => {
+    const response = await api.post(`${USERS_URL}/login`, { username, password });
     const user = response.data;
     console.log(user);
     return user;
@@ -24,7 +24,7 @@ export const profile = async () => {
 };
 
 export const updateUser = async (user) => {
-    const response = await api.put(`${USERS_URL}/${user.sid}`, user);
+    const response = await api.put(`${USERS_URL}/update/${user._id}`, {user});
     return response.data;
 };
 
