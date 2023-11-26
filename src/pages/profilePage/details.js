@@ -28,6 +28,7 @@ function Details () {
         }
         fetchData()
     }, []);
+
         return(
             <div>
             {profile && (
@@ -66,8 +67,6 @@ function Details () {
                 <p>Birthday: {profile.birthday}</p>
                 
             </div>
-            </div>
-
 
             <div className="separator-container">
                 <div className="separator-style-p4"></div>
@@ -88,5 +87,15 @@ function Details () {
                 </div>
             </div>
         </div>
-        ); }
+        
+            )}
+
+</div>
+        )};
+        
+            
+        
+            
+
+
 export default Details;
