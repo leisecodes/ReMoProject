@@ -1,4 +1,5 @@
 import express from "express";
+import "dotenv/config";
 import session from "express-session";
 import cors from 'cors';
 import mongoose from "mongoose";
@@ -6,6 +7,7 @@ import studentController from "./controllers/student-controller.js";
 import bookController from "./controllers/books-controller.js";
 import inputController from "./controllers/inputsController.js";
 import AuthController from "./students/auth-controller.js";
+
 
 const uri = "mongodb+srv://leise:temp@clustersg.ravhtu6.mongodb.net/?retryWrites=true&w=majority";
 const app = express();
