@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import StarRating from './starRating';
 import callers from "../../../images/callers.jpg";
-import '../book.css';
+import '../book_RB.css';
 
 
 function BookInfo() {

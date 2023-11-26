@@ -22,7 +22,7 @@ export default function ScrollBar() {
         {BookValues.map((image) => {
             if (image?.read == 1)
                 return(
-                    <Link to = {image?.link + '/detail'}> 
+                    <Link to = {image?.link + '/detail'}>
                         <img
                             className="image"
                             alt="sliderImage"
