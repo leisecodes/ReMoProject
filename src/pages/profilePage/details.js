@@ -50,23 +50,40 @@ function Details () {
                 <div className="separator-style-p3"></div>
             </div>
 
+
                 
-                <div class = "row mt-4">
+            <div class = "row mt-4">
                 <div className="col">
-                    <p class="profile-field-label-name">Name: 
+                    <p className="profile-field-label-name">Name:</p>
+                    <p className="profile-field-label-pName">Preferred Name:</p>
+                    <p className="profile-field-label-pronoun">Pronouns:</p>
+                    <p className="profile-field-label-school">
+                        <img src={schoolIcon} alt="School Icon" className="profile-text-icon" />
+                        School:
+                    </p>
+                    <p className="profile-field-label-grade">
+                        <img src={gradeIcon} alt="Grade Icon" className="profile-text-icon" />
+                        Grade Level:
+                    </p>
+                    <p className="profile-field-label-birthday">
+                        <img src={birthdayIcon} alt="Birthday Icon" className="profile-text-icon" />
+                        Birthday:
                     </p>
                 </div>
-                    <div className="col-8 profile-field-name">
-                    <p >{profile.firstName} {profile.lastName}
+                <div className="col-7 profile-field-name">
+                    <p className="profile-field-fName" >{profile.firstName} {profile.lastName}
                     </p>
-                </div>
-                <p>Preferred Name: {profile.preferredName}</p>
-                <p>Pronouns: {profile.pronouns}</p>
-                <p>School: {profile.schoolName}</p>
-                <p>Grade Level: {profile.grade}</p>
-                <p>Birthday: {profile.birthday}</p>
                 
+                <p className="profile-field-pName">Preferred Name: {profile.preferredName}</p>
+                <p className="profile-field-pronoun">Pronouns: {profile.pronouns}</p>
+                <p className="profile-field-school">School: {profile.schoolName}</p>
+                <p className="profile-field-grade">Grade Level: {profile.grade}</p>
+                <p className="profile-field-birthday">Birthday: {profile.birthday}</p>
+                </div> 
             </div>
+
+
+
 
             <div className="separator-container">
                 <div className="separator-style-p4"></div>
