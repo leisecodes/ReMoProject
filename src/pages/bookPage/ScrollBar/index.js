@@ -20,6 +20,10 @@ function ScrollBarMain() {
 
             <Message3 />
             <ScrollBar3 />
+
+            <div className="separator-container">
+                <div className="separator-style-5"></div>
+            </div>
         </div>
     )
 }

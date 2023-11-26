@@ -1,79 +1,26 @@
-/* tags.css -> tag, mark as read, and TBR buttons on R & Ur Books pages*/
-.tags {
-    display: flex;
-    align-items: center;
-    margin-top: 60px;
-  }
-  
-.tag-button {
-    border: none;
-    border-radius: 50%;
-    width: 60px;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 10px;
-    cursor: pointer;
-    color: white;
-    font-size: 13.5px;
-  }
-  
-.lg-button {
-    border: none;
-    width: 160px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 20px 10px 55px;
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    border-radius: 20px;
-  }
-
-.tag-color-1 {
-    background-color: #661c78;
-  }
-  
-.tag-color-2 {
-    background-color: #9e4dab;
-  }
-  
-.tag-color-3 {
-    background-color: #E35205;
-  }
-  
-.tag-color-4 {
-    background-color: #ED8B00;
-  }
-  
-
-
 
   
-.green-line {
+ /* Bottom colored lines */  
+.bottom-line2-RB {
     height: 25px;
     background-color: #00B2A9;
   }
   
-.yellow-line {
-    height: 5px; /* Adjust the thickness of the yellow line */
-    background-color: #FFFAA0;
+.bottom-line1-RB {
+    height: 2px; 
+    background-color: #ED8B00;
   }
   
-  /* separator.css */
-.separator-style {
+  /* Top colored lines */
+.separator-style-RB {
     border-top: 4.15px solid #00B2A9;
     width: 90%;
     margin: 0cm 1cm 0.25cm 1cm;
-    border-radius: 1rem;
+    border-radius: 1rem; /*rounded corners on line(s)*/
     position: relative;
   }
   
-.inner-separator-style {
+.inner-separator-style-RB {
     border-top: 1px solid #9e4dab;
     width: 99.9%;
     border-radius: 1rem;
@@ -83,13 +30,14 @@
     transform: translateX(-50%);
   }
   
-  /* pgHeader.css -> holds the back button and label for Book Details*/
-.header-container {
+  /* holds the back button and label for Book Details*/
+.header-container-RB {
     display: flex;
     align-items: center;
   }
   
-.back-button {
+  /* is the back button */
+.back-button-RB {
     background-color: #FF5733;
     width: 55px;
     height: 55px;
@@ -101,59 +49,70 @@
     margin-left: 1.3cm;
   }
   
-.book-details {
+.book-details-RB {
     margin-left: 0.8cm;
   }
   
-.arrow {
-    font-size: 24px;
+.arrow-RB {
+    font-size: 40px;
   }
   
-  /* Reduce the margin between Book Details and (Unread Book) */
-.book-details span {
+  /* Reduce the margin between Book Details and cover */
+.book-details-RB span {
     margin: 0; 
     padding: 0;
   }
 
+  .book-details-label-RB {
+    margin: 0; 
+    padding: 0;
+  }
   
-  /* bookInfo.css -> allows for the cover image and captures tags and book info*/
-.bookInfoContainer {
+  /* allows for the cover image and captures tags and book info*/
+.bookInfoContainer-RB {
     display: flex;
     align-items: center;
+    margin-top: 30px;
 }
 
-.coverImage img {
+.coverImage-RB img {
     width: 420px;
     height: 370px;
     margin: 20px 90px;
 }
 
-.coverImageRd img {
+.coverImageRd-RB img {
     width: 325px;
     height: 420px;
     margin: 20px 90px;
 }
 
-.bookInfoStyle {
+.bookInfoStyle-RB {
     border: 1px solid #000;
-    width: 575px;
-    height: 390px;
+    width: 580px;
+    height: 520px;
     padding: 20px;
     margin-left: 10px;
     border-radius: 20px;
 }
 
 
+.my-review-RB {
+  margin-bottom: 4px;
+  margin-top: 10px;
+}
 
 
 /* reviewButtons.css on Read books page */
-.button-container {
+.button-container-RB {
     display: flex;
     justify-content: left;
     align-items: center;
+    margin-top: 10px;
+  
 }
 
-.review-button {
+.review-button-RB {
     margin: 0 10px; /* Adjust the spacing between buttons */
     border: none;
     width: 150px;
@@ -163,37 +122,38 @@
 }
 
 
-.action-packed-button {
-    background-color: #661c78; /* Set your desired background color */
+.action-packed-button-RB {
+    background-color: #661c78; 
+    color: white; /* Text color */
+    border: none;
+    
+   
+}
+
+.cool-characters-button-RB {
+    background-color: #9e4dab; 
     color: white; /* Text color */
     border: none;
    
 }
 
-.cool-characters-button {
-    background-color: #9e4dab; /* Set your desired background color */
-    color: white; /* Text color */
-    border: none;
-   
-}
-
-.made-me-laugh-button {
-    background-color: #E35205; /* Set your desired background color */
+.made-me-laugh-button-RB {
+    background-color: #E35205;
     color: white; /* Text color */
     border: none;
    
 }
 
 /* Submit & Cancel buttons on Read Books page*/
-.large-button-container {
+.large-button-container-RB {
     display: flex;
     justify-content: center; /* Center the buttons horizontally */
     align-items: center;
     margin-top: 30px; /* Adjust the top margin as needed */
 }
 
-.submit-button,
-.cancel-button {
+.submit-button-RB,
+.cancel-button-RB {
     
     color: white; /* Text color */
     border: none;
@@ -201,15 +161,17 @@
     height: 40px; /* Adjust the height as needed */
     font-size: 16px; /* Adjust the font size as needed */
     margin: 0 10px; /* Adjust the spacing between buttons */
-    border-radius: 5px; /* Add rounded edges */
+    border-radius: 10px; /* Add rounded edges */
     font-weight: bold;
 }
 
+
+
 /* Add a CSS class for the favorite button */
-.favorite-button {
+.favorite-button-RB {
     position: absolute;
-    top: 42px; /* Adjust the vertical position */
-    right: 234px; /* Adjust the horizontal position */
+    top: 20px; /* Adjust the vertical position */
+    left: 1030px; /* Adjust the horizontal position */
     background-color: white;
     border: none;
     border-radius: 70%;
@@ -227,7 +189,7 @@
 }
 
 /* clicked state of the favorite button */
-.favorite-button-clicked {
+.favorite-button-clicked-RB {
     color: red;
     background-color: white;
     border: none;
@@ -236,17 +198,17 @@
 }
 
 /* Read Book star rating */
-.star-rating {
+.star-rating-RB {
     font-size: 24px;
   }
   
-  .star {
+  .star-RB {
     display: inline-block;
     cursor: pointer;
     color: #ccc;
   }
   
-  .star.selected {
+  .star-RB.selected {
     color: #ffcc00; /* Color for selected stars */
   }
   

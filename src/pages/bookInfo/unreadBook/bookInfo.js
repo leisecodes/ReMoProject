@@ -1,7 +1,7 @@
 import React from 'react';
 import culturedDonut from "../../../images/culturedDonut.webp";
 import Tags from './tags';
-import '../book.css';
+import '../book_UB.css';
 
 
 function BookInfo() {
@@ -12,11 +12,11 @@ function BookInfo() {
     };
 
     return (
-        <div className="bookInfoContainer" style={containerStyle}>
-            <div className="coverImage">
+        <div className="bookInfoContainer-UB" style={containerStyle}>
+            <div className="coverImage-UB">
                 <img src={culturedDonut} alt="Book Cover" />
             </div>
-            <div className="bookInfoStyle"> {/* Use the class name from bookInfo.css */}
+            <div className="bookInfoStyle-UB"> {/* Use the class name from bookInfo.css */}
                 {/* Book information here */}
                 <h2 style={{ marginBottom: '4px' }}> Title: </h2>
                 <p style={{ marginBottom: '2px' }}>Author: </p>
@@ -26,6 +26,9 @@ function BookInfo() {
                 <p style={{ marginBottom: '2px' }}>Page Count: </p>
                 <p style={{ marginBottom: '2px' }}>Summary: </p>
 
+                <div className="info-separator-style-UB">
+
+                </div>
 
                 {/* Tag reference here */}
                 <Tags />

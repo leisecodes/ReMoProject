@@ -1,11 +1,11 @@
 import React from 'react';
-import '../book.css';
+import '../book_RB.css';
 
 function Separator () {
 
     return (
-        <div className="separator-style">
-          <div className="inner-separator-style"></div>
+        <div className="separator-style-RB">
+          <div className="inner-separator-style-RB"></div>
         </div>
       );
 

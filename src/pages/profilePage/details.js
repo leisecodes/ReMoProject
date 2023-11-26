@@ -4,6 +4,9 @@ import { useNavigate } from "react-router";
 import { profileThunk, logoutThunk, updateUserThunk } from "../../services/auth-thunks";
 import profileImg from "../../images/profileimg.jpg";
 import user from "./profile.json";
+import schoolIcon from "../../images/schoolImg3.png";
+import gradeIcon from "../../images/gradeImg.png";
+import birthdayIcon from "../../images/bdayImg.png";
 
 import "./profilePg.css";
 
@@ -38,11 +41,16 @@ function Details () {
                     <div class="row">
                     <input type="file" />
                     </div>
-                    <button class="btn btn-outline-secondary mt-1" type="button" id="inputGroupFileAddon04" >Save Image</button>
                 </div>    
+                </div>
             </div>  
 
-            <div class = "row mt-4">
+            <div className="separator-container">
+                <div className="separator-style-p3"></div>
+            </div>
+
+                
+                <div class = "row mt-4">
                 <div className="col">
                     <p class="profile-field-label-name">Name: 
                     </p>
@@ -59,17 +67,17 @@ function Details () {
                 
             </div>
             </div>
-            </div>
-)}
+
 
             <div className="separator-container">
-                <div className="separator-style-p3"></div>
+                <div className="separator-style-p4"></div>
             </div>
 
             <div class = "row align-items-center">
                 <div class = "col-3">
-                <button class= "btn btn-outline-secondary" type="button" id="editProfileBtn"> Edit Profile </button>
+                <button class= "btn edit-profile-button" type="button" id="editProfileBtn"> Edit Profile </button>
                 </div>
+
                 <div class= "col-3">
                     <select class="custom-select custom-select-sm">
                     <option selected>Change Color</option>
