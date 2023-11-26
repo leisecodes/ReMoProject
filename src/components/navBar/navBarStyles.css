@@ -1,0 +1,56 @@
+.navBar-home-btn {
+  margin-left: 35px;
+  margin-top: 10px;
+  background-color: #661c78; 
+  color: #ffffff; 
+  font-weight: bold;
+  height: 45px;
+  width: 115px;
+  border: none; 
+  border-radius: 10px;
+}
+
+.navBar-books-btn {
+    margin-left: 35px;
+    margin-top: 10px;
+    background-color: #9e4dab; 
+    color: #ffffff; 
+    font-weight: bold;
+    height: 45px;
+    width: 115px;
+    border: none; 
+    border-radius: 10px;
+  }
+
+  .navBar-vote-btn {
+    margin-left: 35px;
+    margin-top: 10px;
+    
+    background-color: #E35205; 
+    color: #ffffff; 
+    font-weight: bold;
+    height: 45px;
+    width: 115px;
+    border: none; 
+    border-radius: 10px;
+  }
+
+  .navBar-profile-btn {
+    margin-left: 35px;
+    margin-top: 10px;
+    background-color: white; 
+     
+    color: #ED8B00; 
+    font-weight: bold;
+    height: 45px;
+    width: 115px;
+    border: none; 
+    border-radius: 10px;
+  }
+
+  .brand-label {
+    font-weight: 500;
+    color: #00B2A9;
+    font-size: 24px;
+
+  }
