@@ -4,9 +4,8 @@ import PracticeBook from "./practiceBook.js";
 import { findBooksThunk } from "../../services/books-thunks.js";
 import { Navigate } from "react-router";
 import { useState } from "react";
-import PracticeFilteredBookList from "./practiceFilteredBookList.js";
 
-const BooksList = () => {
+const PracticeFilteredBookList = () => {
     const { books, loading } = useSelector((state)=> state.books);
    
     const dispatch = useDispatch();
@@ -15,7 +14,6 @@ const BooksList = () => {
     }, [])
 
     return (
-      <div>
         <ul className="list-group">
         { loading &&
       <li className="list-group-item">
@@ -30,11 +28,8 @@ const BooksList = () => {
           key={book._id} book={book}  /> )
     }
   </ul>
-    <h1>Filtered list</h1>
-    <PracticeFilteredBookList/>
 
-  </div>
     );
 };
 
-export default BooksList;
+export default PracticeFilteredBookList;

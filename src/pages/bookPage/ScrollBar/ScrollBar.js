@@ -1,12 +1,23 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import BookTemplate from "../bookTemplate.js";
+import { findBooksThunk } from "../../../services/books-thunks.js";
 import "./styles.css";
 import goalImg from "../../../images/goal.jpg";
 import { Outlet, Link, } from "react-router-dom";
-import {BookValues} from "../../BookValues"
+//import {BookValues} from "../../BookValues"
+
+
 export default function ScrollBar() {
   const sliderRef = useRef(null);
   const scrollAmount = 100;
 
+  const { books, loading } = useSelector((state)=> state.books);
+   
+    const dispatch = useDispatch();
+    useEffect(()=> {
+        dispatch(findBooksThunk())
+    }, [])
 
   return (
     <div className="ScrollBar">
@@ -19,19 +30,11 @@ export default function ScrollBar() {
       >
       </button>
       <div className="images-container" ref={sliderRef}>
-        {BookValues.map((image) => {
-            if (image?.read == 1)
-                return(
-                    <Link to = {image?.link + '/detail'}>
-                        <img
-                            className="image"
-                            alt="sliderImage"
-                            key={image?.id}
-                            src={image?.src}
-                           />
-                    </Link>
-                );
-        })}
+        {books.map(book =>
+        
+        <BookTemplate 
+          key={book._id} book={book} className="image" /> ) }
+
       </div>
       <button
         className="nav-btn"
