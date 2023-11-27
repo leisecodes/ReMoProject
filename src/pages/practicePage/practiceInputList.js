@@ -25,7 +25,7 @@ const PracticeInputList = () => {
     }
 
     {
-      inputs.map(input =>
+      inputs.filter((input)=>input.studentID===2 && input.bookID===100004).map(input =>
         
         <PracticeInput 
           key={input._id} input={input}  /> )

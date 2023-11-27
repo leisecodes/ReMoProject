@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import BookTemplate from "../bookTemplate.js";
+import ReadBookTemplate from "../readBookTemplate.js";
 import { findBooksThunk } from "../../../services/books-thunks.js";
 import "./styles.css";
 import goalImg from "../../../images/goal.jpg";
@@ -32,7 +32,7 @@ export default function ScrollBar() {
       <div className="images-container" ref={sliderRef}>
         {books.map(book =>
         
-        <BookTemplate 
+        <ReadBookTemplate 
           key={book._id} book={book} className="image" /> ) }
 
       </div>

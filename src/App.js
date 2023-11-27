@@ -23,6 +23,7 @@ import { Provider } from 'react-redux';
 import authReducer from './reducers/auth-reducer.js';
 import UnreadBook from './pages/bookInfo/unreadBook/index.js';
 import PracticeInputList from './pages/practicePage/practiceInputList.js';
+import ReadBook from './pages/bookDetail/readBook/index.js';
 
 const store = configureStore(
   {reducer: {user: authReducer, books: booksReducer, book: booksReducer, inputs: inputsReducer}}
@@ -41,6 +42,7 @@ function App() {
           <Route path="/login" element = {<Login/>}/>
           <Route path="/practice" element = {<PracticePage/>}/>
           <Route path= "/booklist" element = {<PracticeInputList/>}/>
+          <Route path ="bookdetails/read/:id" element= {<ReadBook/>}/>
           <Route path= "/bookdetails/:id" element = {<UnreadBook/>}/>
 
         </Routes>
