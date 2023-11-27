@@ -9,9 +9,10 @@
     padding: 20px; 
     background-color: #d1f1f3; 
     margin-top: 10px; 
+    margin-bottom: 60px;
     border-radius: 10px; /* Add rounded edges */
     width: 600px;
-    height: 650px;
+    height: 600px;
   }
 
 
@@ -71,7 +72,7 @@
 
   .separator-style-p4 {
     border-top: 1px solid #E35205;
-    margin: 45px 1px 20px 1px;
+    margin: 135px 1px 20px 1px;
     border-radius: 1rem;
     position: relative;
     width: 100vw;
