@@ -82,12 +82,26 @@ const BookInfo = ({
                
                 {/* Book information here */}
                 <h2 style={{ marginBottom: '10px' }}> Title: {book.title} </h2>
+                <h3 style={{ marginBottom: '10px' }}> Author: {book.author} </h3>
                 <h5 style={{ marginBottom: '14px' }}> 
                     My Rating: 
                     <StarRating rating={myRating} onRatingChange={handleRatingChange} />    
                 </h5>
 
-
+                <h5 style={{ marginBottom: '4px' }}> Note-to-Self: </h5>
+                
+                {/* Text entry box for the review */}
+                <textarea
+                    rows="4" 
+                    cols="50" 
+                    placeholder="Enter your note-to-self here..." 
+                    style={{
+                        background: 'linear-gradient(to bottom, #f5f5f5, #f0f0f0)',
+                        border: '1px solid #ccc',
+                        borderRadius: '5px',
+                        padding: '5px'
+                    }}
+                ></textarea>
 
                 <h5 style={{ marginBottom: '4px' }}> My Review: </h5>
                 
@@ -103,6 +117,7 @@ const BookInfo = ({
                         padding: '5px'
                     }}
                 ></textarea>
+
 
 
                 {/* Quick Feeling Buttons */}
