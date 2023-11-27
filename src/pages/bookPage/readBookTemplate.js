@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import "./templateStyles.css";
 
-const BookTemplate = (
+const ReadBookTemplate = (
     {
     
         book = {
@@ -33,7 +33,7 @@ return (
       <div className="col-10">
       <div>
         {
-        <Link to = {`/bookdetails/${book.bookID}`} key={book._id}>
+        <Link to = {`/bookdetails/read/${book.bookID}`} key={book._id}>
         <img className='image' src={book.cover} alt={book.title}/>
         </Link> 
 }
@@ -44,4 +44,4 @@ return (
 );
 };
 
-export default BookTemplate;
+export default ReadBookTemplate;

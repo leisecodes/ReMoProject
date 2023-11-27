@@ -4,9 +4,47 @@ import callers from "../../../images/callers.jpg";
 import '../book_RB.css';
 
 
-function BookInfo() {
+const BookInfo = ({
+    book = {
+        "_id": 123,
+        "bookID": 567,
+        "title": "This is a book",
+        "author": "This is the author",
+        "illustrator": "This is the illustrator",
+        "genre": ["genre", "another one"],
+        "summary": "summary",
+        "pageCount": 4,
+        "excerpt": "words words words",
+        "bookTrailerLink": "A link",
+        "themes": ["theme1", "theme2"],
+        "awards": ["award1", "award2"],
+        "copyrightDate": "01/01/1911",
+        "form": "poetry",
+        "cover": "url"
+    },
+
+    input = {
+        "_id": 123,
+        "inputID": 567,
+        "studentID": 890,
+        "bookID": 246,
+        "dateStarted": "01/01/2001",
+        "dateCompleted": "02/02/2002",
+        "markRead": false,
+        "rank": 1,
+        "shelved": true,
+        "emoji": "happy",
+        "favorite": false,
+        "NoteToSelf": "note",
+        "review": "review",
+        "vote": false,
+        "TBR": false,
+    }
+}) => {
     const [isFavorite, setIsFavorite] = useState(false);
     const [myRating, setMyRating] = useState(0);
+
+
 
     const containerStyle = {
         display: 'flex',
@@ -38,12 +76,12 @@ function BookInfo() {
             
             
             <div className="coverImageRd">
-                <img src={callers} alt="Book Cover" />
+                <img src={book.cover} alt={book.title} />
             </div>
             <div className="bookInfoStyle"> {/* Use the class name from bookInfo.css */}
                
                 {/* Book information here */}
-                <h2 style={{ marginBottom: '10px' }}> Title: </h2>
+                <h2 style={{ marginBottom: '10px' }}> Title: {book.title} </h2>
                 <h5 style={{ marginBottom: '14px' }}> 
                     My Rating: 
                     <StarRating rating={myRating} onRatingChange={handleRatingChange} />    
