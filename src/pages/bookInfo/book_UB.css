@@ -118,6 +118,7 @@
   
 .arrow-UB {
     font-size: 40px;
+    color: white;
   }
   
   /* Reduce the margin between Book Details and (Unread Book) */
@@ -140,23 +141,19 @@
 }
 
 .coverImage-UB img {
-    width: 420px;
-    height: 370px;
-    margin: 20px 90px;
+    width: 450px;
+    height: 600px;
+    margin: 10px 90px 130px ;
 }
 
-.coverImageRd img {
-    width: 325px;
-    height: 420px;
-    margin: 20px 90px;
-}
 
 .bookInfoStyle-UB {
     border: 1px solid #000;
-    width: 575px;
-    height: 430px;
+    width: 610px;
+    height: 730px;
     padding: 20px;
     margin-left: 10px;
+    margin-bottom: 140px;
     border-radius: 20px;
 }
 
