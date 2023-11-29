@@ -9,11 +9,12 @@ function PgHeader () {
         <div>
           <Separator />
           <div className="header-container-RB">
-            <div className="back-button-RB">
-                <Link to = {'/books'}>
-                    <div className="arrow-RB">&#8592;</div>
-                </Link>
-            </div>
+            <Link to = {'/books'} class="text-decoration-none">
+		          <div className="back-button-UB">    
+		            <div className="arrow-UB">&#8592;</div>      
+		          </div>
+		        </Link>
+
             <div className="book-details-RB">
               <h1 className="book-details-label-RB">Book Details</h1>
               <span className="book-details-RB span">(Read Book)</span>
