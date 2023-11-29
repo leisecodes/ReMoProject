@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from "react-redux";
+import { findInputsThunk, updateInputThunk } from "../../../services/inputs-thunks.js";
 import StarRating from './starRating';
 import callers from "../../../images/callers.jpg";
 import '../book_RB.css';
@@ -36,14 +38,21 @@ const BookInfo = ({
         "emoji": "happy",
         "favorite": false,
         "NoteToSelf": "note",
-        "review": "review",
+        "review": "",
         "vote": false,
         "TBR": false,
     }
 }) => {
     const [isFavorite, setIsFavorite] = useState(false);
     const [myRating, setMyRating] = useState(0);
+    
+    const { inputs, loading } = useSelector((state)=> state.inputs);
+   
 
+    const dispatch = useDispatch();
+    useEffect(()=> {
+        dispatch(findInputsThunk({}))
+    }, [])
 
 
     const containerStyle = {
@@ -52,6 +61,11 @@ const BookInfo = ({
         position: 'relative',
     };
 
+    const filteredInput = inputs.filter((input)=>((input.bookID===book.bookID && input.studentID===2)));
+    const noteToSelf = filteredInput.map((input)=>input.NoteToSelf);
+    const bookReview = filteredInput.map((input)=>input.review);
+    const favorite = filteredInput.map((input)=>input.favorite);
+    
     const handleFavoriteClick = () => {
         setIsFavorite(!isFavorite);
     };
@@ -65,6 +79,9 @@ const BookInfo = ({
         : 'favorite-button';
     
 
+    
+    
+    
     return (
         <div className="bookInfoContainer" style={containerStyle}>
             <button 
@@ -81,16 +98,18 @@ const BookInfo = ({
             <div className="bookInfoStyle"> {/* Use the class name from bookInfo.css */}
                
                 {/* Book information here */}
+                <h1>{input.favorite} </h1>
                 <h2 style={{ marginBottom: '10px' }}> Title: {book.title} </h2>
                 <h3 style={{ marginBottom: '10px' }}> Author: {book.author} </h3>
                 <h5 style={{ marginBottom: '14px' }}> 
-                    My Rating: 
-                    <StarRating rating={myRating} onRatingChange={handleRatingChange} />    
+                    My Rating:
+                    <StarRating rating={filteredInput.map(input=>input.rank)} onRatingChange={handleRatingChange} />    
                 </h5>
-
                 <h5 style={{ marginBottom: '4px' }}> Note-to-Self: </h5>
                 
-                {/* Text entry box for the review */}
+                {/* Text entry box for the note */}
+                {/*render text input box if no recorded note*/}
+                {noteToSelf.toString() === "" && 
                 <textarea
                     rows="4" 
                     cols="50" 
@@ -102,10 +121,21 @@ const BookInfo = ({
                         padding: '5px'
                     }}
                 ></textarea>
+                }
+                {/*render saved note*/}
+                {noteToSelf.toString() !== "" &&
+                <p style={{
+                    background: 'linear-gradient(to bottom, #f5f5f5, #f0f0f0)',
+                    border: '1px solid #ccc',
+                    borderRadius: '5px',
+                    padding: '5px'
+                }}>{noteToSelf}</p>
+                }
 
                 <h5 style={{ marginBottom: '4px' }}> My Review: </h5>
                 
                 {/* Text entry box for the review */}
+                {(bookReview.toString() === "") && 
                 <textarea
                     rows="4" 
                     cols="50" 
@@ -117,7 +147,16 @@ const BookInfo = ({
                         padding: '5px'
                     }}
                 ></textarea>
-
+                }
+                {bookReview.toString() !== "" &&
+                <p style={{
+                    background: 'linear-gradient(to bottom, #f5f5f5, #f0f0f0)',
+                    border: '1px solid #ccc',
+                    borderRadius: '5px',
+                    padding: '5px'
+                }}>{bookReview}</p>
+                }
+                
 
 
                 {/* Quick Feeling Buttons */}

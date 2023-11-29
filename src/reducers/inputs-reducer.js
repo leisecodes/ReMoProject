@@ -13,8 +13,8 @@ const inputsSlice = createSlice({
         [updateInputThunk.fulfilled]:
         (state, { payload })=> {
             state.loading = false;
-            const inputIndex = state.inputs.findIndex((i) => i.inputID === payload.inputID)
-            state.inputs[inputIndex] = {...state.inputs[inputIndex], ...payload}
+            const inputIndex = state.inputs.findIndex((i) => i._id === payload._id)
+            state.inputs[inputIndex] = { ...state.inputs[inputIndex], ...payload }
         },
         [createInputThunk.fulfilled]:
         (state, { payload }) => {

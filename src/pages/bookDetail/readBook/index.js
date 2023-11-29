@@ -23,7 +23,7 @@ const ReadBook = () => {
             {books && (
                 <div>
                 {books.filter((book)=>book.bookID===Number(id)).map(book=>
-                    <BookInfo key={book._id} book={book} input={inputs.filter((input)=>(input.bookID===Number(id)) && (input.studentID===2))}/>)}    
+                    <BookInfo key={book._id} book={book} input={inputs.filter((input)=>((input.bookID===Number(id)) && (input.studentID===2)))}/>)}    
                 </div>
             )}                   
             <BaseShade/>

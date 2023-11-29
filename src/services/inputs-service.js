@@ -19,6 +19,6 @@ export const deleteInput = async (iid) => {
 }
 
 export const updateInput = async (input) => {
-    const response = await axios.put(`${input._id}`, input);
+    const response = await axios.put(`${INPUTS_API}/${input._id}`, input);
     return input;
 }
