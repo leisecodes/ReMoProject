@@ -75,16 +75,12 @@
     margin-top: 30px;
 }
 
-.coverImage-RB img {
-    width: 420px;
-    height: 370px;
-    margin: 20px 90px;
-}
+
 
 .coverImageRd-RB img {
-    width: 355px;
-    height: 480px;
-    margin: 20px 90px;
+      width: 420px;
+    height: 570px;
+    margin: 20px 90px 140px;
 }
 
 .bookInfoStyle-RB {
@@ -93,6 +89,7 @@
     height: 620px;
     padding: 20px;
     margin-left: 10px;
+    margin-bottom: 140px;
     border-radius: 20px;
 }
 
@@ -171,7 +168,7 @@
 .favorite-button-RB {
     position: absolute;
     top: 20px; /* Adjust the vertical position */
-    left: 1050px; /* Adjust the horizontal position */
+    left: 1120px; /* Adjust the horizontal position */
     background-color: white;
     border: none;
     border-radius: 70%;
