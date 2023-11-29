@@ -61,12 +61,12 @@ const BookInfo = ({
       };
 
     const favoriteButtonClass = isFavorite
-        ? 'favorite-button favorite-button-clicked'
-        : 'favorite-button';
+        ? 'favorite-button-RB favorite-button-clicked-RB'
+        : 'favorite-button-RB';
     
 
     return (
-        <div className="bookInfoContainer" style={containerStyle}>
+        <div className="bookInfoContainer-RB" style={containerStyle}>
             <button 
                 className={favoriteButtonClass}
                 onClick={handleFavoriteClick}
@@ -75,10 +75,10 @@ const BookInfo = ({
             </button>
             
             
-            <div className="coverImageRd">
+            <div className="coverImageRd-RB">
                 <img src={book.cover} alt={book.title} />
             </div>
-            <div className="bookInfoStyle"> {/* Use the class name from bookInfo.css */}
+            <div className="bookInfoStyle-RB"> {/* Use the class name from bookInfo.css */}
                
                 {/* Book information here */}
                 <h2 style={{ marginBottom: '10px' }}> Title: {book.title} </h2>
@@ -90,20 +90,20 @@ const BookInfo = ({
 
                 <h5 style={{ marginBottom: '4px' }}> Note-to-Self: </h5>
                 
-                {/* Text entry box for the review */}
+                {/* Text entry box for the note-to-self */}
                 <textarea
                     rows="4" 
                     cols="50" 
                     placeholder="Enter your note-to-self here..." 
                     style={{
                         background: 'linear-gradient(to bottom, #f5f5f5, #f0f0f0)',
-                        border: '1px solid #ccc',
+                        border: '1px solid #00B2A9',
                         borderRadius: '5px',
                         padding: '5px'
                     }}
                 ></textarea>
 
-                <h5 style={{ marginBottom: '4px' }}> My Review: </h5>
+                <h5 className="my-review-RB"> My Review: </h5>
                 
                 {/* Text entry box for the review */}
                 <textarea
@@ -112,7 +112,7 @@ const BookInfo = ({
                     placeholder="Enter your review here..." 
                     style={{
                         background: 'linear-gradient(to bottom, #f5f5f5, #f0f0f0)',
-                        border: '1px solid #ccc',
+                        border: '1px solid #00B2A9',
                         borderRadius: '5px',
                         padding: '5px'
                     }}
@@ -121,25 +121,25 @@ const BookInfo = ({
 
 
                 {/* Quick Feeling Buttons */}
-                <div className="button-container">
+                <div className="button-container-RB">
                   
-                    <button className="review-button action-packed-button">
+                    <button className="review-button-RB action-packed-button-RB">
                         Action-packed
                     </button>
-                    <button className="review-button cool-characters-button">
+                    <button className="review-button-RB cool-characters-button-RB">
                         Cool characters
                     </button>
-                    <button className="review-button made-me-laugh-button">
+                    <button className="review-button-RB made-me-laugh-button-RB">
                         Made Me laugh
                     </button>
                 </div>
 
                 {/* Action Buttons */}
-                <div className="large-button-container">
-                    <button className="submit-button" style={{backgroundColor:'#052489' }}>
+                <div className="large-button-container-RB">
+                    <button className="submit-button-RB" style={{backgroundColor:'#0fbac6' }}>
                         Submit
                     </button>
-                    <button className="cancel-button" style={{backgroundColor:'#052489' }}>
+                    <button className="cancel-button-RB" style={{backgroundColor:'#052489' }}>
                         Cancel
                     </button>
                 </div>
