@@ -16,7 +16,7 @@ mongoose.connect(uri, {dbName:'msbaDB'});
 const port = process.env.PORT || 5000;
 app.use(cors({
   credentials: true,
-  origin: process.env.FRONTEND_URL,
+  origin: ["http://localhost:3000", "https://preeminent-sunburst-86e559.netlify.app/"],
 }));
 const sessionOptions = {
   secret: "any string",
