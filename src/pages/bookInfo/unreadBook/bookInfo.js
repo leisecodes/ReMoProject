@@ -34,7 +34,7 @@ const BookInfo = ({
             <div className="coverImage-UB">
                 <img src={book.cover} alt={book.title} />
             </div>
-            <div className="bookInfoStyle-UB"> {/* Use the class name from bookInfo.css */}
+            <div className="bookInfoStyle-UB"> 
                 {/* Book information here */}
                 <h2 style={{ marginBottom: '4px' }}> Title: {book.title} </h2>
                 <p style={{ marginBottom: '2px' }}>Author: {book.author} </p>
