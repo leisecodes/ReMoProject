@@ -7,7 +7,7 @@ import user from "./profile.json";
 import schoolIcon from "../../images/schoolImg3.png";
 import gradeIcon from "../../images/gradeImg.png";
 import birthdayIcon from "../../images/bdayImg.png";
-
+import { parse } from 'date-fns';
 import "./profilePg.css";
 
 
@@ -28,6 +28,13 @@ function Details () {
         }
         fetchData()
     }, []);
+
+
+    const BirthDate = (date) => {
+    const shortDate = date.toString().slice(0,10);    
+    return <p>{shortDate}</p>;
+    };
+
 
         return(
             <div>
@@ -74,11 +81,11 @@ function Details () {
                     <p className="profile-field-fName" >{profile.firstName} {profile.lastName}
                     </p>
                 
-                <p className="profile-field-pName">Preferred Name: {profile.preferredName}</p>
-                <p className="profile-field-pronoun">Pronouns: {profile.pronouns}</p>
-                <p className="profile-field-school">School: {profile.schoolName}</p>
-                <p className="profile-field-grade">Grade Level: {profile.grade}</p>
-                <p className="profile-field-birthday">Birthday: {profile.birthday}</p>
+                <p className="profile-field-pName">{profile.preferredName}</p>
+                <p className="profile-field-pronoun">{profile.pronouns}</p>
+                <p className="profile-field-school">{profile.schoolName}</p>
+                <p className="profile-field-grade">{profile.grade}</p>
+                <p className="profile-field-birthday">{BirthDate(profile.birthday)}</p>
                 </div> 
             </div>
 
