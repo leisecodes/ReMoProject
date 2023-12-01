@@ -15,7 +15,7 @@ function Greeting (props) {
         </div>
         }
         {props.user === "default" &&
-        <div class = "ms-0 greeting-container">
+        <div class = "ms-0 greeting-container message-default">
             <h1>Welcome!</h1>
             <h3>We can't wait to read with you! Please login to get reading.</h3>
             <div className="login-button-container">

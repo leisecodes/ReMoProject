@@ -100,20 +100,29 @@
     max-width: 99%;
     box-sizing: content-box;
 }
+  .message-default {
+    text-align: center;
+    justify-content: center;
+  }
 
   .btn-primary {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     height: 75px;
-    width: 60%;
+    width: 10%;
     color: white;
     font-weight: bold;
+    font-size: large;
     background-color: #E35205;
     border: none;
+    border-radius: 15px;
+    
   }
 
   .login-button-container {
     text-align: center;
-    width: 50%;
+    width: 100%;
+    padding-left: 200px;
+    padding-right:200px;
   
   }
