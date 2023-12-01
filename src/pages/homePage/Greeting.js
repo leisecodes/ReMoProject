@@ -18,8 +18,8 @@ function Greeting (props) {
         <div class = "ms-0 greeting-container message-default">
             <h1>Welcome!</h1>
             <h3>We can't wait to read with you! Please login to get reading.</h3>
-            <div className="login-button-container">
-            <button className="btn-primary" onClick={()=>{navigate("/login")}}>Login Here</button>
+            <div className="home-login-button-container">
+            <button className="home-btn-primary" onClick={()=>{navigate("/login")}}>Login Here</button>
             </div>
         </div>
         }

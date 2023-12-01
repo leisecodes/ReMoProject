@@ -105,11 +105,11 @@
     justify-content: center;
   }
 
-  .btn-primary {
+  .home-btn-primary {
     margin-top: 30px;
     margin-bottom: 30px;
     height: 75px;
-    width: 10%;
+    width: 50%;
     color: white;
     font-weight: bold;
     font-size: large;
@@ -119,10 +119,7 @@
     
   }
 
-  .login-button-container {
+  .home-login-button-container {
     text-align: center;
     width: 100%;
-    padding-left: 200px;
-    padding-right:200px;
-  
   }
