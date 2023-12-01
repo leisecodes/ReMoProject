@@ -100,3 +100,20 @@
     max-width: 99%;
     box-sizing: content-box;
 }
+
+  .btn-primary {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 75px;
+    width: 60%;
+    color: white;
+    font-weight: bold;
+    background-color: #E35205;
+    border: none;
+  }
+
+  .login-button-container {
+    text-align: center;
+    width: 50%;
+  
+  }

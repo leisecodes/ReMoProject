@@ -4,7 +4,6 @@ import voteimg from "../../images/voteimg.jpg";
 import starimg from "../../images/starimg.png";
 import challengeGoal from "../../images/challengegoal.png";
 import "./homepg.css";
-import user from "../profilePage/profile.json";
 
 
 
@@ -29,7 +28,7 @@ function Goals (props) {
                         </center>
                     </div>
                     <div class="row text-center p-3">
-                        {user.readCount >= user.goals.voteGoal ? <h2> Goal Achieved! </h2> : <h2> <span className="read-count">{user.readCount}</span> of <span className="goal-label-1">3</span> Completed</h2>}
+                        {props.user.readCount >= props.user.goals.voteGoal ? <h2> Goal Achieved! </h2> : <h2> <span className="read-count">{props.user.readCount}</span> of <span className="goal-label-1">3</span> Completed</h2>}
                     </div>
                 </div>
             </div>
@@ -47,7 +46,7 @@ function Goals (props) {
                         </center>
                     </div>
                     <div class="row text-center p-3">
-                    {(user.readCount >= user.goals.personalGoal) ? <h2> Goal Achieved! </h2> : <h2> <span className="read-count">{user.readCount}</span> of <span className="goal-label-2">{user.goals.personalGoal}</span> Completed</h2>}
+                    {(props.user.readCount >= props.user.goals.personalGoal) ? <h2> Goal Achieved! </h2> : <h2> <span className="read-count">{props.user.readCount}</span> of <span className="goal-label-2">{props.user.goals.personalGoal}</span> Completed</h2>}
                     </div>
                 </div>
             </div>
@@ -65,7 +64,7 @@ function Goals (props) {
                         </center>
                     </div>
                     <div class="row text-center p-3">
-                    {(user.readCount >= user.goals.starGoal) ? <h2> Goal Achieved! </h2> : <h2><span className="read-count">{user.readCount}</span> of <span className="goal-label-3">{user.goals.starGoal}</span> Completed</h2>}
+                    {(props.user.readCount >= props.user.goals.starGoal) ? <h2> Goal Achieved! </h2> : <h2><span className="read-count">{props.user.readCount}</span> of <span className="goal-label-3">{props.user.goals.starGoal}</span> Completed</h2>}
                     </div>
                 </div>
             </div>
@@ -83,7 +82,7 @@ function Goals (props) {
                         </center>
                     </div>
                     <div class="row text-center p-3">
-                    {(user.readCount >= user.goals.challengeGoal) ? <h2> Goal Achieved! </h2> : <h2> <span className="read-count">{user.readCount}</span> of <span className="goal-label-4">{user.goals.challengeGoal}</span> Completed</h2>}
+                    {(props.user.readCount >= props.user.goals.challengeGoal) ? <h2> Goal Achieved! </h2> : <h2> <span className="read-count">{props.user.readCount}</span> of <span className="goal-label-4">{props.user.goals.challengeGoal}</span> Completed</h2>}
                     </div>
                 </div>
             </div>

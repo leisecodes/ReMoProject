@@ -40,8 +40,6 @@ function App() {
           <Route path="/books/detail" element= {<BookDetail/>}/>
           <Route path="/books/info" element= {<BookInfo/>}/>
           <Route path="/login" element = {<Login/>}/>
-          <Route path="/practice" element = {<PracticePage/>}/>
-          <Route path= "/booklist" element = {<PracticeInputList/>}/>
           <Route path ="bookdetails/read/:id" element= {<ReadBook/>}/>
           <Route path= "/bookdetails/:id" element = {<UnreadBook/>}/>
 
