@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { findInputsThunk, updateInputThunk } from "../../../services/inputs-thunks.js";
-import StarRating from './starRating';
+import StarRating from './starRating'; // Importing StarRating component
 import callers from "../../../images/callers.jpg";
 import '../book_RB.css';
 
-
+// BookInfo component with default props for book and input objects
 const BookInfo = ({
+    // Default book object with various properties
     book = {
         "_id": 123,
         "bookID": 567,
@@ -24,7 +25,7 @@ const BookInfo = ({
         "form": "poetry",
         "cover": "url"
     },
-
+    // Default book object with various properties
     input = {
         "_id": 123,
         "inputID": 567,

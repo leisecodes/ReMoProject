@@ -36,13 +36,13 @@ const BookInfo = ({
             </div>
             <div className="bookInfoStyle-UB"> 
                 {/* Book information here */}
-                <h2 style={{ marginBottom: '4px' }}> Title: {book.title} </h2>
-                <p style={{ marginBottom: '2px' }}>Author: {book.author} </p>
-                <p style={{ marginBottom: '2px' }}>Illustrator: {book.illustrator} </p>
-                <p style={{ marginBottom: '2px' }}>Copyright Date: {book.copyrightDate} </p>
-                <p style={{ marginBottom: '2px' }}>Genre: {book.genre} </p>
-                <p style={{ marginBottom: '2px' }}>Page Count: {book.pageCount} </p>
-                <p style={{ marginBottom: '2px' }}>Summary: {book.summary} </p>
+                <h2 style={{ marginBottom: '4px' }}> <span class="fw-bold">Title:</span> {book.title} </h2>
+                <p style={{ marginBottom: '2px' }}><span class="fw-bold">Author:</span> {book.author} </p>
+                <p style={{ marginBottom: '2px' }}><span class="fw-bold">Illustrator:</span> {book.illustrator} </p>
+                <p style={{ marginBottom: '2px' }}><span class="fw-bold">Copyright Date:</span> {book.copyrightDate} </p>
+                <p style={{ marginBottom: '2px' }}><span class="fw-bold"> Genre: </span> {book.genre} </p>
+                <p style={{ marginBottom: '2px' }}><span class="fw-bold">Page Count:</span> {book.pageCount} </p>
+                <p style={{ marginBottom: '2px' }}><span class="fw-bold">Summary:</span> {book.summary} </p>
 
                 <div className="info-separator-style-UB">
 
