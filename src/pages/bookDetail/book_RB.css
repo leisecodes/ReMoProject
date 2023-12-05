@@ -76,24 +76,21 @@
     margin-top: 30px;
 }
 
-.coverImage-RB img {
-    width: 420px;
-    height: 370px;
-    margin: 20px 90px;
-}
+
 
 .coverImageRd-RB img {
-    width: 325px;
-    height: 420px;
+    width: 345px;
+    height: 440px;
     margin: 20px 90px;
 }
 
 .bookInfoStyle-RB {
     border: 1px solid #000;
     width: 580px;
-    height: 520px;
+    height: 655px;
     padding: 20px;
     margin-left: 10px;
+    
     border-radius: 20px;
 }
 
@@ -168,11 +165,11 @@
 
 
 
-/* Add a CSS class for the favorite button */
+/* Favorite button */
 .favorite-button-RB {
     position: absolute;
-    top: 20px; /* Adjust the vertical position */
-    left: 1030px; /* Adjust the horizontal position */
+    top: 10px; 
+    left: 1065px; 
     background-color: white;
     border: none;
     border-radius: 70%;
@@ -182,10 +179,10 @@
     font-size: 32px;
     color: white;
     cursor: pointer;
-    z-index: 1; /* Place the button above other content */
-    display: flex; /* Center content horizontally and vertically */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    z-index: 1; /* above other content */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 

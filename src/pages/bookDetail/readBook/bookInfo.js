@@ -93,10 +93,11 @@ const BookInfo = ({
             <div className="coverImageRd-RB">
                 <img src={book.cover} alt={book.title} />
             </div>
-            <div className="bookInfoStyle-RB"> {/* Use the class name from bookInfo.css */}
+            <div className="bookInfoStyle-RB"> 
                
                 {/* Book information here */}
-                <h2 style={{ marginBottom: '10px' }}> Title: {book.title} </h2>
+                
+                <h2 style={{ marginBottom: '10px', marginTop: '10px' }}> <span class="fw-bold">Title:</span> {book.title} </h2>
                 <h3 style={{ marginBottom: '10px' }}> Author: {book.author} </h3>
                 <h5 style={{ marginBottom: '14px' }}> 
                     My Rating:
