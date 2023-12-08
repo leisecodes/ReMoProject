@@ -12,15 +12,19 @@ function ScrollBarMain() {
     return (
         <div>
             
+            {/* Render first set of Message and ScrollBar components */}
             <Message />
             <ScrollBar />
            
+            {/* Render second set of Message and ScrollBar components */}
             <Message2 />
             <ScrollBar2 />
 
+            {/* Render third set of Message and ScrollBar components */}
             <Message3 />
             <ScrollBar3 />
 
+            {/* Bottom Separator container w/ bottom-most line*/}
             <div className="separator-container">
                 <div className="separator-style-5"></div>
             </div>

@@ -4,7 +4,7 @@ import "./templateStyles.css";
 
 const ReadBookTemplate = (
     {
-    
+        // Default book object with various properties
         book = {
             "_id": 123,
             "bookID": 567,
@@ -28,11 +28,14 @@ const ReadBookTemplate = (
 
 
 return (
+    // List item containing book details
     <li className="list-group-item">
     <div className="row">
       <div className="col-10">
       <div>
         {
+
+        // Link to book details page based on book ID
         <Link to = {`/bookdetails/read/${book.bookID}`} key={book._id}>
         <img className='image' src={book.cover} alt={book.title}/>
         </Link> 

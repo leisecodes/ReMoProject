@@ -12,9 +12,14 @@ export default function ScrollBar() {
   const sliderRef = useRef(null);
   const scrollAmount = 100;
 
+
+  // Retrieve books and loading state from the Redux store
   const { books, loading } = useSelector((state)=> state.books);
    
+    // Access the Redux dispatch function
     const dispatch = useDispatch();
+    
+    // Fetch books when the component mounts
     useEffect(()=> {
         dispatch(findBooksThunk())
     }, [])
@@ -30,6 +35,8 @@ export default function ScrollBar() {
       >
       </button>
       <div className="images-container" ref={sliderRef}>
+
+        {/* Map through books to display BookTemplate */}
         {books.map(book =>
         
         <ReadBookTemplate 
