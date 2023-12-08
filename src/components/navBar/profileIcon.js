@@ -1,7 +1,7 @@
 import React from "react";
 import { BsPersonCircle } from 'react-icons/bs';
 
-
+{/* Profile button in nav bar */}
 function ProfileIcon() {
     return (
         <div id='profile-icon'>

@@ -1,5 +1,6 @@
 import React from "react";
 
+{/* Books button in nav bar */}
 function BooksButton() {
     return (
         <div>

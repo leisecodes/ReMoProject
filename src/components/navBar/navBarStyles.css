@@ -1,3 +1,5 @@
+
+/* Home button */
 .navBar-home-btn {
   margin-left: 35px;
   margin-top: 10px;
@@ -10,6 +12,7 @@
   border-radius: 10px;
 }
 
+/* Books button */
 .navBar-books-btn {
     margin-left: 35px;
     margin-top: 10px;
@@ -22,6 +25,7 @@
     border-radius: 10px;
   }
 
+  /* Vote button */
   .navBar-vote-btn {
     margin-left: 35px;
     margin-top: 10px;
@@ -35,6 +39,7 @@
     border-radius: 10px;
   }
 
+  /* Profile button */
   .navBar-profile-btn {
     margin-left: 35px;
     margin-top: 10px;
@@ -48,6 +53,7 @@
     border-radius: 10px;
   }
 
+  /* MSBA brand label style */
   .brand-label {
     font-weight: 500;
     color: #00B2A9;

@@ -1,5 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
+
+{/* Home button in nav bar */}
 function HomeButton() {
     return(
         <div>
