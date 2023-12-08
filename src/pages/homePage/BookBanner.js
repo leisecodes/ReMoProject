@@ -21,6 +21,8 @@ import hopeInHopetownImage from '../../images/BookCovers/Last Hope In Hopetown.j
 
 
 function BookBanner() {
+    
+    // Array containing book cover objects with IDs and image sources
     const bookCovers = [
         { id: 1, src: lifelingImage},
         { id: 2, src: thirstImage},
@@ -44,7 +46,7 @@ function BookBanner() {
         { id: 19, src: hopeInHopetownImage },
     ];
 
-
+    // Render book cover images using map function
     return (
         <div className="book-banner">
         {bookCovers.map((cover) => (

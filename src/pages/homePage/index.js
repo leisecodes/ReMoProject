@@ -11,15 +11,23 @@ import Login from "../loginScreen/login";
 
 
 function HomePage(){
+
+        // Selecting currentUser from Redux store
         const { currentUser } = useSelector((state)=>state.user);
+
+        // State to manage profile and initialize it with currentUser
         const [profile, setProfile] = useState(currentUser);
+
+        // Hook to enable navigation
         const navigate = useNavigate();
 
     return(
         
         <div>
+        {/* Conditionally rendering components based on profile existence */}
         {!profile &&
         <div>
+        {/* Greeting and BookBanner displayed for non-logged-in user */}
         <Greeting user="default"/>
         <BookBanner/>
         </div>
@@ -27,6 +35,7 @@ function HomePage(){
 
         {profile && 
         <div>
+        {/* Greeting, BookBanner, and Goals displayed for logged-in user */}
         <Greeting user={profile}/>
         <BookBanner />
         <Goals user={profile} />

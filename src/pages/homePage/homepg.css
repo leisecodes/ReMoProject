@@ -1,28 +1,25 @@
 
 
 
-/* Goals.css */
+/* Goals title */
 .goals-title {
     color: #00B2A9;
     margin-bottom: 0px; 
     margin-top: 10px;
   }
 
+/* Goal card margins */
 .goal-card-margin-left {
-    margin-left: 25px; /* Add left margin */
-    margin-right: 5px; /* Add right margin */
+    margin-left: 25px; 
+    margin-right: 5px; 
 }
 .goal-card-margin-right {
-    margin-left: 5px; /* Add left margin */
-    margin-right: 25px; /* Add right margin */
+    margin-left: 5px; 
+    margin-right: 25px; 
 }
 
-/* rounded corners for goal images*/
-.container-md img {
-    border-radius: 50%; 
-}
 
-/* Add new classes for each goal card with different background colors */
+/* Goal cards with different border colors */
 .goal-card-1 {
     border: 2px solid #661c78 ; 
     border-radius: 10px;
@@ -78,7 +75,7 @@
     margin-bottom: 5px;
   }
   
-/*book banner book coves*/
+/*book banner book covers*/
   .book-cover {
     width: 170px; /* Width for each book cover */
     height: 190px; /* height for each book cover */
@@ -88,10 +85,10 @@
     
   }
 
-  /*shading for greeting*/
+  /*shading for greeting container*/
   .greeting-container {
     background-color: #d1f1f3; /* Soft teal color */
-    padding: 20px; /* padding  */
+    padding: 20px; 
     padding-top: 10px;
     padding-bottom: px;
     margin-bottom: 2px;
@@ -100,6 +97,9 @@
     max-width: 99%;
     box-sizing: content-box;
 }
+
+
+  /* Styles for conditional Home page login button*/
   .message-default {
     text-align: center;
     justify-content: center;
