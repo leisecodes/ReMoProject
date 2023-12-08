@@ -62,11 +62,13 @@ const BookInfo = ({
         position: 'relative',
     };
 
+    // Functions to retrieve specific data from inputs and handle UI changes
     const filteredInput = inputs.filter((input)=>((input.bookID===book.bookID && input.studentID===2)));
     const noteToSelf = filteredInput.map((input)=>input.NoteToSelf);
     const bookReview = filteredInput.map((input)=>input.review);
     const favorite = filteredInput.map((input)=>input.favorite);
     
+    // Handlers for UI interactions
     const handleFavoriteClick = () => {
         setIsFavorite(!isFavorite);
     };
@@ -75,30 +77,33 @@ const BookInfo = ({
         setMyRating(newRating);
       };
 
+    // Conditional class for favorite button based on state
     const favoriteButtonClass = isFavorite
         ? 'favorite-button-RB favorite-button-clicked-RB'
         : 'favorite-button-RB';
     
 
+    // Rendering UI elements based on user interaction and data availability
     return (
         <div className="bookInfoContainer-RB" style={containerStyle}>
             <button 
                 className={favoriteButtonClass}
                 onClick={handleFavoriteClick}
                 >
-                    &hearts;
+                    &hearts; {/* Heart icon for favorite button */}
             </button>
             
-            
+            {/* Book cover image */}
             <div className="coverImageRd-RB">
                 <img src={book.cover} alt={book.title} />
             </div>
             <div className="bookInfoStyle-RB"> 
                
-                {/* Book information here */}
-                
+                {/* Book information */}
                 <h2 style={{ marginBottom: '10px', marginTop: '10px' }}> <span class="fw-bold">Title:</span> {book.title} </h2>
                 <h3 style={{ marginBottom: '10px' }}> Author: {book.author} </h3>
+                
+                {/* Star Rating */}
                 <h5 style={{ marginBottom: '14px' }}> 
                     My Rating:
                     <StarRating rating={filteredInput.map(input=>input.rank)} onRatingChange={handleRatingChange} />    

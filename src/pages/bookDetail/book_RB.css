@@ -77,13 +77,14 @@
 }
 
 
-
+/* cover image */
 .coverImageRd-RB img {
     width: 345px;
     height: 440px;
     margin: 20px 90px;
 }
 
+/* book info container*/
 .bookInfoStyle-RB {
     border: 1px solid #000;
     width: 580px;
@@ -94,14 +95,14 @@
     border-radius: 20px;
 }
 
-
+/* spacing for review*/
 .my-review-RB {
   margin-bottom: 4px;
   margin-top: 10px;
 }
 
 
-/* reviewButtons.css on Read books page */
+/* quick feeling buttons container*/
 .button-container-RB {
     display: flex;
     justify-content: left;

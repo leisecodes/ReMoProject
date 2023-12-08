@@ -1,10 +1,11 @@
-/* tags.css -> tag, mark as read, and TBR buttons on R & Ur Books pages*/
+/* button container*/
 .tags-UB {
     display: flex;
     align-items: center;
     margin-top: 25px;
   }
   
+/* Tag buttons */
 .tag-button-UB {
     border: none;
     border-radius: 50%;
@@ -19,6 +20,7 @@
     font-size: 16px;
   }
   
+ /* mark as read and TBR buttons */
 .lg-button-UB {
     border: none;
     width: 160px;
@@ -53,18 +55,18 @@
 
 
 
-  
+/* Colored lines at bottom of page */
 .bottom-line2-UB {
     height: 25px;
     background-color: #00B2A9;
   }
   
 .bottom-line1-UB {
-    height: 2px; /* Adjust the thickness of the yellow line */
+    height: 2px; 
     background-color: #ED8B00;
   }
   
-  /* separator.css */
+/* thicker line at top of page */
 .separator-style-UB {
     border-top: 4.15px solid #00B2A9;
     width: 90%;
@@ -72,7 +74,8 @@
     border-radius: 1rem;
     position: relative;
   }
-  
+ 
+/* thinner line at top of page */
 .inner-separator-style-UB {
     border-top: 1px solid #9e4dab;
     width: 99.9%;
@@ -83,7 +86,7 @@
     transform: translateX(-50%);
   }
 
-    /* separator.css */
+/* line w/in book info container*/
 .info-separator-style-UB {
   border-top: 1px solid #00B2A9;
   width: 95%;
@@ -94,7 +97,7 @@
 
 
   
-  /* pgHeader.css -> holds the back button and label for Book Details*/
+  /* holds the back button and label for Book Details*/
 .header-container-UB {
     display: flex;
     align-items: center;
@@ -121,7 +124,7 @@
     color: white;
   }
   
-  /* Reduce the margin between Book Details and (Unread Book) */
+/* Reduce the margin between Book Details and (Unread Book) */
 .book-details-UB span {
     margin: 0; 
     padding: 0;
@@ -133,20 +136,21 @@
   }
 
 
-  /* bookInfo.css -> allows for the cover image and captures tags and book info*/
+  /* container allows for the cover image and captures tags and book info*/
 .bookInfoContainer-UB {
     display: flex;
     align-items: center;
     margin-top: 35px;
 }
 
+ /* cover image */
 .coverImage-UB img {
     width: 450px;
     height: 600px;
     margin: 10px 90px 130px ;
 }
 
-
+ /* container holding book info & buttons */
 .bookInfoStyle-UB {
     border: 1px solid #000;
     width: 610px;

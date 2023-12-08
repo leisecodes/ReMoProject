@@ -1,6 +1,8 @@
 import React from 'react';
 import '../book_RB.css';
 
+{/* Holds colored lines in the page header for Read
+book details */}
 function Separator () {
 
     return (

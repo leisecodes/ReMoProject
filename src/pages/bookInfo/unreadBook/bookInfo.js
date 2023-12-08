@@ -1,10 +1,11 @@
 import React from 'react';
-import culturedDonut from "../../../images/culturedDonut.webp";
+
 import Tags from './tags';
 import '../book_UB.css';
 
 
 const BookInfo = ({
+    // default book object
     book = {
         "_id": 123,
         "bookID": 567,
@@ -23,19 +24,25 @@ const BookInfo = ({
         "cover": "url"
     }
 }) => {
-
+    // Style for the container holding book information
     const containerStyle = {
         display: 'flex',
         alignItems: 'center',
     };
 
     return (
+        // Container for book info & cover
         <div className="bookInfoContainer-UB" style={containerStyle}>
+            
+            {/* Cover image */}
             <div className="coverImage-UB">
                 <img src={book.cover} alt={book.title} />
             </div>
+
+            {/* Book info container */}
             <div className="bookInfoStyle-UB"> 
-                {/* Book information here */}
+            
+                {/* Book info*/}
                 <h2 style={{ marginBottom: '4px' }}> <span class="fw-bold">Title:</span> {book.title} </h2>
                 <p style={{ marginBottom: '2px' }}><span class="fw-bold">Author:</span> {book.author} </p>
                 <p style={{ marginBottom: '2px' }}><span class="fw-bold">Illustrator:</span> {book.illustrator} </p>
@@ -44,11 +51,10 @@ const BookInfo = ({
                 <p style={{ marginBottom: '2px' }}><span class="fw-bold">Page Count:</span> {book.pageCount} </p>
                 <p style={{ marginBottom: '2px' }}><span class="fw-bold">Summary:</span> {book.summary} </p>
 
-                <div className="info-separator-style-UB">
+                {/* Line separating book info and buttons */}
+                <div className="info-separator-style-UB"> </div>
 
-                </div>
-
-                {/* Tag reference here */}
+                {/* Tag reference  */}
                 <Tags />
             </div>
         </div>

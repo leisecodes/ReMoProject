@@ -1,6 +1,10 @@
 import React from 'react';
 import '../book_RB.css';
 
+
+{/* Component serves to provide shading lines at the bottom 
+of the Read Book Detail page*/}
+
 function BaseShade () {
 // Styling object defining the appearance of the container
     const containerColors = {
@@ -11,7 +15,7 @@ function BaseShade () {
         backgroundColor: '#00B2A9',
       };
     
-      //Returning container
+      // Container holding bottom lines
     return (
         <div style={containerColors}>
           <div className="bottom-line1-RB"></div>
