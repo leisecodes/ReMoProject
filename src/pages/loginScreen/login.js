@@ -21,9 +21,12 @@ function Login() {
     };
     return (
         <div>
+            {/* Login form */}
             <div class="login-background-container">
                 <div className="login-container">
                     <p class="opener-style">Please enter your login information</p>
+                    
+                    {/* Username input */}
                     <div className="mt-2 un-input-container">
                         <label>Username</label>
                         <input 
@@ -33,6 +36,8 @@ function Login() {
                             onChange={(event) => setUsername(event.target.value)}
                         />
                     </div>
+
+                    {/* Password input */}
                     <div className="mt-2 pw-input-container">
                         <label>Password</label>
                         <input 
@@ -42,6 +47,8 @@ function Login() {
                             onChange={(event) => setPassword(event.target.value)}
                         />
                     </div>
+
+                    {/* Login button */}
                     <div className="login-button-container">
                         <button className="btn btn-primary mt-2"
                             onClick={handleLogin}>
@@ -50,6 +57,8 @@ function Login() {
                     </div>
                 </div>
             </div>
+
+            {/* Powered by logo */}
             <div className="power-text-container">
                 <p> Powered by </p>
                 <img src={logo_ReMo} alt="ReMo logo"/>

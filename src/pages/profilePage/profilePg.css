@@ -195,6 +195,7 @@
     
 }
 
+/*Edit progile button */
 .edit-profile-button {
     background-color: #E35205;
     border: 1px ;
@@ -217,6 +218,7 @@
     overflow-x: auto; 
 }
 
+/* Badge & badge labels*/
 .fantasy-badge {
     width: 80px; 
     height: 80px; 

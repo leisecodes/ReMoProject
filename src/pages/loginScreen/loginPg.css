@@ -1,3 +1,4 @@
+/* Styling for the login input container */
 .login-container {
     width: 380px;
     margin: 30px auto ;
@@ -7,19 +8,23 @@
     background-color: #fff;
   }
 
+  /* Styling for the username input container */
   .un-input-container {
     margin-bottom: 15px;
   }
 
+  /* Styling for the password input container */
   .pw-input-container {
     margin-bottom: 15px;
   }
 
+  /* Styling for the login button container */
   .login-button-container {
     text-align: center;
   
   }
 
+  /* Styling for the primary login button */
   .btn-primary {
     width: 85%;
     font-weight: bold;
@@ -27,12 +32,14 @@
     border: none;
   }
 
+  /* Styling for the opener text */
   .opener-style {
     font-weight: bold;
     text-align: center;
     color: #661c78;
   }
 
+  /* Styling for the large shaded container */
   .login-background-container {
     background-color: #d1f1f3;
     margin-top: 50px;
@@ -42,6 +49,7 @@
     padding-top: 30px;
   }
 
+/* Styling for the 'powered by' text container */
 .power-text-container {
     text-align: center;
     margin-top: 10px;
@@ -50,13 +58,14 @@
     justify-content: center;
 }
 
-
+/* Styling for the powered by text */
 .power-text-container p {
     margin-right: 10px; /* Add spacing between text and logo */
    
     margin-bottom: 3px; /* Vertical centering of text against logo*/
 }
 
+/* Styling for the powered by logo */
 .power-text-container img {
     width: 100px;
     height: auto;
