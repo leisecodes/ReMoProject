@@ -1,5 +1,9 @@
+/* Setting styles for the entire document body */
+
 body {
+  /* Resetting margin to zero to remove default margins */
   margin: 0;
+  /* Setting a font stack for better cross-platform consistency */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +11,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+/* Styling for code elements within the document */
 code {
+  /* Specifying a font stack for code elements */
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }

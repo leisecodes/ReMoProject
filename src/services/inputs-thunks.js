@@ -1,11 +1,15 @@
+// Importing createAsyncThunk function from Redux Toolkit
 import { createAsyncThunk } from "@reduxjs/toolkit";
+// Importing service functions for inputs from the inputs-service module
 import * as inputsService from "./inputs-service.js";
 
+// Thunk action creator to find inputs asynchronously
 export const findInputsThunk = createAsyncThunk(
     "inputs/findInputs",
     async () => await inputsService.findInputs()
 );
 
+// Thunk action creator to delete an input asynchronously
 export const deleteInputThunk = createAsyncThunk(
     'inputs/deleteInput',
     async (iid) => {
@@ -14,6 +18,8 @@ export const deleteInputThunk = createAsyncThunk(
     }
 );
 
+
+// Thunk action creator to create a new input asynchronously
 export const createInputThunk = createAsyncThunk (
     'inputs/createInput',
     async (input) => {
@@ -22,6 +28,7 @@ export const createInputThunk = createAsyncThunk (
     }
 );
 
+// Thunk action creator to update an input asynchronously
 export const updateInputThunk = createAsyncThunk(
     'inputs/updateInput',
     async (input) =>
