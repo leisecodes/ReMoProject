@@ -1,6 +1,6 @@
-import { ObjectId } from "mongodb";
+// Importing the Mongoose library for schema creation
 import mongoose from "mongoose";
-
+// Defining a schema for students using the Mongoose Schema constructor
 const studentsSchema = new mongoose.Schema({
     studentID: Number,
     firstName: String,
@@ -33,4 +33,5 @@ const studentsSchema = new mongoose.Schema({
     
 }, {collection: 'students'});
 
+// Exporting the studentsSchema to be used for creating models
 export default studentsSchema;

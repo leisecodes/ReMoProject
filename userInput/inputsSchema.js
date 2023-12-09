@@ -1,5 +1,7 @@
+// Importing the Mongoose library for schema creation
 import mongoose from "mongoose";
-import { ObjectId } from "mongodb";
+
+// Defining a schema for inputs using the Mongoose Schema constructor
 const inputsSchema = new mongoose.Schema({
     inputID: Number,
     studentID: Number,
@@ -16,4 +18,5 @@ const inputsSchema = new mongoose.Schema({
     vote: Boolean,
     TBR: Boolean
 }, {collection: 'userInput'});
+// Exporting the inputsSchema to be used for creating models
 export default inputsSchema;
