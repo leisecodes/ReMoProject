@@ -1,3 +1,5 @@
+// Book Values containing id, scr, linking, read(1)/unread(0)/, and access.
+// Originally used for a first pass to the scrollbar.
 export const BookValues = [
              {
                id: 1,

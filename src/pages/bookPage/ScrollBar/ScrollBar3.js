@@ -28,6 +28,7 @@ export default function ScrollBar() {
         }}
       >
       </button>
+      {/* Container for displaying book images */}
       <div className="images-container" ref={sliderRef}>
       {/* Map through books to display BookTemplate */}
       {books.map(book =>
@@ -35,9 +36,11 @@ export default function ScrollBar() {
         <BookTemplate 
           key={book._id} book={book} className="image" /> ) }
       </div>
+      {/* Button to scroll right */}
       <button
         className="nav-btn"
         onClick={() => {
+        // Access the container reference and scroll right
           const container = sliderRef.current;
           container.scrollLeft += scrollAmount;
         }}
